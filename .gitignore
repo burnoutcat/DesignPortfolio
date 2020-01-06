@@ -1,1 +1,3 @@
 .DS_Store
+lib/credential.php
+admin.php

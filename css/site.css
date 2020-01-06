@@ -1,0 +1,45 @@
+/*Variable Colors*/
+
+:root{
+	--site-color-dark-0:#000000;
+	--text-color-light-10:#ffffff;
+	--text-color-light-8:#dedede;
+}
+
+
+html{
+	font-family: "Heebo", san-serif;
+	font-family: "Lato" , san-serif;
+	background-color: var(--site-color-dark-0);
+}
+
+/*Typographic*/
+
+h1{
+	font-family: "Heebo" , san-serif;
+	font-size:3em;
+	font-weight: 700;
+	color:var(--text-color-light-10);
+}
+
+h4{
+	font-family: "Heebo", san-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	color:var(--text-color-light-8);
+}
+
+p{
+	font-family: "Lato", san-serif;
+	font-size: 1em;
+	color:var(--text-color-light-10);
+	font-weight: 400;
+}
+
+b{
+	font-family: "Lato", san-serif;
+	font-size: 1em;
+	color: var(--text-color-light-10);
+	font-weight: 700;
+}
+
