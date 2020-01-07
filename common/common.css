@@ -58,15 +58,11 @@ p{
 /*nav*/
 
 .navbar{
-	background-color: #0b4c6b;
     height: 80px;
     font-family: sans-serif;
     color: #e6e6e6;
 }
 
-.navbar p{
-	font-size: 1.6em;
-}
 
 .container{
 	width: 85%;

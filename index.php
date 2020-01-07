@@ -11,7 +11,7 @@
 
 	<?php include "elements/main-header.php" ?>
 
-	<div class="container flex-parent">
+	<div class="index-window container flex-parent">
 		<div class="index-title flex-child">
 			<h4>Design by</h4>
 			<h1>burnoutcat</h1>

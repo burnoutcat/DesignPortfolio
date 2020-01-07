@@ -1,6 +1,16 @@
 /*Index.php*/
 
+.index-window{
+	align-items: center;
+}
+
 .index-detail{
 	flex: 0 200px;
 	text-align: right;
+}
+
+
+.index-title h4{
+	position: relative;
+	top:25px;
 }
