@@ -1,7 +1,5 @@
 <?php 
 
-include "credential.php"
-
 function print_p($v) {
 	echo "<pre>",print_r($v),"</pre>";
 }
@@ -9,6 +7,8 @@ function print_p($v) {
 function get_json($s) {
 	return json_decode(file_get_contents($s)); 
 }
+
+include "credential.php";
 
 
 function makeQuery($conn,$qry){

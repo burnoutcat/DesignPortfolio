@@ -1,0 +1,126 @@
+html{
+    background-color: #F3F3F3;
+    -webkit-appearance: none;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.input-form{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.input-detail input{
+	border: 2px solid #e4e4e4;
+    background-color: white;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    outline: 0;
+    transition: 300ms;
+}
+
+.input-detail textarea{
+	width: 70%;
+	border: 2px solid #e4e4e4;
+    background-color: white;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    outline: 0;
+    transition: 300ms;
+    height: 10em;
+}
+
+/*Admin Header*/
+
+.admin-header{
+    width: 100%;
+    height: 80px;
+    background-color: #334F5C;
+}
+
+.admin-site-name{
+    width: 200px;
+    color: white;
+    padding: 0 2em 0 2em;
+}
+
+.admin-site-name h1{
+    font-size: 1.5em;
+    letter-spacing: 0.8px;
+    font-weight: 800;
+    margin-bottom: -12px;
+}
+
+.admin-site-name h2{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.admin-site-title{
+    border-left: solid white 1px; 
+    padding-left: 0.8em;
+}
+
+.admin-site-title h3{
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+}
+
+.admin-site-title h3:not(:first-child){
+    margin-top: -8px;
+}
+
+/*Filter & Navigation Menu*/
+.content-window{
+    min-height: 800px;
+}
+
+.menu-window{
+    background-color: #DDDDDD;
+    width: 200px;
+}
+
+.admin-search{
+    background-color: #25293B;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
+}
+
+
+.admin-search input{
+    width: 170px;
+    font-family: 'Reeto',sans-serif;
+    padding: 6px 10px;
+    border: white;
+    border-radius: 80px;
+    font-size: 0.8em;
+    font-weight: 300;
+    outline: none;
+}
+
+.filter-categories a{
+    display: block;
+    padding: 1em 0 1em 2.5em;
+    color: white;
+    font-weight: 300;
+    font-size: 0.9em;
+    background-color: #25293B;
+}
+
+.list-selection.active{
+    background-color:#334F5C;
+}
+
+.filter-categories a:hover{
+    background-color:#334F5C;
+}
