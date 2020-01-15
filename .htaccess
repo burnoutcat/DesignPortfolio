@@ -1,8 +1,0 @@
-DirectoryIndex index.html index.php
-
-<Files admin.php>
-AuthType Basic
-AuthName "Anthentication Required"
-AuthUserFile /home/jwrx22hlr1h4/.htpasswd
-Require valid-user
-</Files>
