@@ -1,42 +1,107 @@
 html{
     background-color: #F3F3F3;
     -webkit-appearance: none;
+    min-width: 900px;
 }
 
 body {
     font-family: 'Heebo', sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
+
+/*Buttons*/
+
+.admin-grey-button{
+    border:solid grey;
+    background-color: grey;
+    color: white;
+    height: 100%;
+    outline: none;
+    padding: 0 2em 0 2em;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.admin-blue-button{
+    border:solid #435863;
+    background-color: #435863;
+    color: white;
+    height: 100%;
+    outline: none;
+    padding: 0 2em 0 2em;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.admin-blue-button:hover{
+    background-color: #7e8e96;
+    border:solid #7e8e96;
+}
+
+.admin-transparent-button{
+    border:solid grey 1px;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+    height: 25px;
+    width: 100%;
+    padding: 0 1.5em 0 1.5em;
+    border-radius: 5px;
+}
+
+.admin-transparent-button:hover{
+    border:solid black 1px;;
+    color: black;
+}
+
+
 .input-form{
-	max-width: 700px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .input-detail input{
-	border: 2px solid #e4e4e4;
+	border: 1px solid #e4e4e4;
     background-color: white;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Reebo',sans-serif;
     padding: 10px 10px;
-    width: 70%;
+    width: 80%;
     border-radius: 2px;
     -webkit-appearance: none;
     outline: 0;
+    font-weight: 300;
     transition: 300ms;
+    font-size: 0.88em;
+    color: #0a0a0a;
+}
+
+.input-detail input:focus,.input-detail textarea:focus {
+    border: 1px solid #a09d9d;
 }
 
 .input-detail textarea{
-	width: 70%;
-	border: 2px solid #e4e4e4;
+	width: 80%;
+	border: 1px solid #e4e4e4;
     background-color: white;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Reebo',sans-serif;
     padding: 10px 10px;
     -webkit-appearance: none;
     border-radius: 2px;
     outline: 0;
     transition: 300ms;
-    height: 10em;
+    height: 20em;
+    font-size: 0.88em;
+    font-weight: 300;
+    color: #0a0a0a;
+}
+
+.input-detail:not(:first-child){
+    margin-top: 1em;
 }
 
 /*Admin Header*/
@@ -82,12 +147,14 @@ body {
 
 /*Filter & Navigation Menu*/
 .content-window{
-    min-height: 800px;
+    min-height: 500px;
+    height: calc(100vh - 80px);
 }
 
 .menu-window{
     background-color: #DDDDDD;
     width: 200px;
+    position: relative;
 }
 
 .admin-search{
@@ -123,4 +190,162 @@ body {
 
 .filter-categories a:hover{
     background-color:#334F5C;
+}
+
+.admin-logout{
+    border-top: solid #c3bfbf 1px;
+    width: 100%;
+    padding-top: 1em;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.admin-logout a{
+    font-weight: 300;
+    color: #585454;
+}
+
+.admin-logout a:hover{
+    color: black;
+}
+
+/*Project Window*/
+
+.project-window{
+    margin: 0 auto;
+    padding: 1.5em 1.5em 0 1.5em;
+    max-width: 1500px;
+    overflow: scroll;
+}
+
+.project-window h1{
+    margin: 0em 0 1em 0; 
+    font-size: 1.3em;
+    font-weight: 400;
+
+}
+
+.sortandadd-window{
+    margin: 1em 0 1em 0;
+}
+
+.project-view{
+    background-color: white;
+    padding: 0.9em 0.5em 0.9em 0.5em; 
+    letter-spacing: 0.5px; 
+    color: #334F5C;
+}
+
+.project-view h2{
+    font-weight: 700;
+}
+
+.project-view span{
+    font-weight: 300;
+}
+
+.project-list{
+    background-color: white;
+    padding: 1em 1em 0 1em;
+    border-top: solid #dddddd 20px;
+    min-width: 275px;
+    height: calc(100vh - 225px);
+    overflow: scroll;
+}
+
+.project-list hr:last-child {
+    display: none;
+}
+
+.project-item-list{
+    padding: 1em 0 1em 0;
+}
+
+.project-item-list:first-child{
+    padding-top: 0.5em;
+}
+
+.project-list-thumbs{
+    width: 90px;
+}
+
+.project-list-title{
+    margin-left: 20px; 
+}
+
+.project-list-title h2{
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.project-list-title h3{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #344f5c;
+    white-space: nowrap;
+}
+
+.project-list-createdate, .project-list-modifydate{
+    text-align: right;
+    width: 120px;
+    padding: 0 1em;
+    margin: 0 1em;
+}
+
+.project-list-createdate p, .project-list-modifydate p{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.project-list-control{
+    padding: 0 1em 0 1em;
+    width: 100px;
+}
+
+.project-list-control button:first-child{
+    margin-bottom: 0.8em;
+}
+
+
+.add-button{
+    margin-left: 1em;
+}
+
+/*Product Edit Form*/
+.edit-project-window{
+    background-color: white;
+    padding: 1em 2em;
+}
+
+.edit-project-form-title{
+    margin: 1em 0 2em 0;
+    height: 30px;
+}
+
+.edit-project-form-title h2{
+    font-weight: 400;
+    color: #344f5c;
+}
+.input-detail p{
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #797979;
+}
+
+.edit-control{
+    height: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.edit-control button{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.edit-control button:first-child{
+    margin-right: 1em;
 }

@@ -21,9 +21,6 @@ a{
 	text-decoration: none;
 }
 
-/*a:hover{
-	text-decoration: underline;
-}*/
 
 ol, ul{
 	list-style: none;
@@ -49,11 +46,12 @@ p{
 	font-weight: 500;
 }
 
-/*img{
+/*images*/
+
+.media-image{
 	width: 100%;
 	height: auto;
-}*/
-
+}
 
 /*nav*/
 
@@ -189,26 +187,6 @@ p{
 
 }
 
-/*Bread Crumbs*/
-
-
-
-/*Small Classes*/
-
-/*.container{
-	position: relative;
-	width: 1200px;
-    margin: 0 auto;
-}
-*/
-/*Components*/
-
-/*.nav{
-	background-color: var(--color-grey-dark);
-	color:var(--color-grey-light);
-}*/
-
-
 /*Helper Classes*/
 
 .flex-parent { display:flex; }
@@ -227,6 +205,10 @@ p{
 }
 .add-margin-2{
 	margin-bottom: 2em;
+}
+
+.add-margin-5{
+	margin-bottom: 5em;
 }
 
 .hidden { display:none; }

@@ -103,7 +103,7 @@
 			$statement->execute();
 			if($conn->errno) die($conn->error);
 
-			header("loaction:admin.php?id={$_GET['id']}");
+			header("location:admin.php");
 
 		}
 
@@ -175,7 +175,7 @@
 				if($conn->errno) die($conn->error);
 				$id = $conn->insert_id;
 
-				header("location:admin.php?id=$id");
+				header("location:admin.php");
 		}
 
 		if($_GET['action'] == 'delete'){
@@ -192,11 +192,11 @@
 
 function projectListTemplate($carry,$item){
 return $carry. <<<HTML
-<div class="project-item-list flex-parent">
+<div class="project-item-list flex-parent flex-align-center">
 	<div class="project-list-thumbs">
 		<img src="img/$item->image_thumbnail" class="media-image" alt="$item->name">
 	</div>
-	<div class="project-list-title">
+	<div class="project-list-title flex-child">
 		<h2>$item->name</h2>
 		<h3>$item->category</h3>
 	</div>
@@ -208,13 +208,11 @@ return $carry. <<<HTML
 	</div>
 	<div class="project-list-control">
 		<button class="admin-transparent-button" onclick="location.href='portfolio-detail.php?id=$item->id'">Visit</button>
-	</div>
-	<div class="project-list-control">
 		<button class="admin-transparent-button" onclick="location.href='?id=$item->id'">Edit</button>
 	</div>
-
-	<hr>
 </div>
+
+<hr>
 
 HTML;
 }
@@ -225,12 +223,12 @@ $addoredit = $id=='new' ? 'Add' : 'Edit';
 $createorupdate = $id =='new' ? 'create' : 'update';
 
 echo <<<HTML
-<div class="card">
+<div class="edit-project-window">
 	
 	<div class="flex-parent edit-project-form-title">
 		<h2 class="flex-child">$addoredit Project</h2>
-		<div class="flex-none">
-			<button class="admin-grey-button" onclick="location.href='admin.php?id=$id&action=delete'">DELETE</button>
+		<div class="delete-project flex-none">
+			<button class="admin-grey-button" onclick="if( confirm('Are you sure you want to delete this project?'))location.href='admin.php?id=$id&action=delete';">DELETE</button>
 		</div>
 	</div>
 
@@ -255,7 +253,7 @@ echo <<<HTML
 			<p class="flex-child">Banner Image</p>
 			<input id="image_banner" type="text" name="image_banner" value="$o->image_banner">
 		</div>
-		<div class="input-detail flex-parent input-des-main">
+		<div class="input-detail flex-parent input-des-main add-margin-5">
 			<p class="flex-child">Main Description</p>
 			<textarea id="description_main" type="text" name="description_main">$o->description_main</textarea>
 		</div>
@@ -339,12 +337,14 @@ echo <<<HTML
 			<p class="flex-child">Image</p>
 			<input id="image_8" type="text" name="image_8" value="$o->image_8">
 		</div>
-		<div class="input-detail flex-parent input-des-8">
+		<div class="input-detail flex-parent input-des-8 add-margin-2">
 			<p class="flex-child">Description</p>
 			<textarea id="description_8" type="text" name="description_8">$o->description_8</textarea>
 		</div>
-		<button type="submit" value="Submit"  class="admin-blue-button" style="width: 100%;">Submit</button>
-		<button class="admin-grey-button" onclick="location.href='admin.php'" type="button" class="button" style="width: 100%">Cancel</button>
+		<div class="edit-control flex-parent">
+			<button class="admin-grey-button" onclick="location.href='admin.php'" type="button" class="button" style="width: 100%">Cancel</button>
+			<button type="submit" value="Submit"  class="admin-blue-button" style="width: 100%;">$createorupdate</button>
+		</div>
 	</form>
 </div>
 
@@ -366,6 +366,19 @@ HTML;
 	<link rel="stylesheet" href="common/common.css">
 	<link rel="stylesheet" href="css/admin.css">
 
+	<script src="lib/jquery-3.4.1.min.js"></script>
+
+	<script>
+
+		$(function(){
+			$(".list-filter").on("click",function(e){
+
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+		});
+
+	</script>
+
 </head>
 <body>
 
@@ -380,13 +393,14 @@ HTML;
 		</div>
 	</header>
 
+
 	<div class="content-window flex-parent">
 		<div class="menu-window flex-none">
 			<form id="list-search-form" class="admin-search">
 				<input type="search" class="search-input list-search" placeholder="Search Projects">
 			</form>
 			<nav class="filter-categories">
-				<a href="#" class="list-filter list-selection active" data-value="All Projects">All Projects</a>
+				<a href="admin.php" class="list-filter list-selection active" data-value="All Projects">All Projects</a>
 				<a href="#" class="list-filter list-selection" data-value="UI/UX Designs">UI/UX Design</a>
 				<a href="#" class="list-filter list-selection" data-value="Motion Graphics">Motion Graphic</a>
 				<a href="#" class="list-filter list-selection" data-value="Graphic Designs">Graphic Designs</a>
@@ -417,17 +431,17 @@ HTML;
 			<div class="project-view flex-child">
 				<h2>View: <span>All Projects</span></h2>
 			</div>
-			<div class="flex-none">
+			<div class="flex-none add-button">
 				<button class="admin-blue-button" onclick="location.href='admin.php?id=new'">Add</button>
 			</div>
+		</div>
 
-			<div class="project-list">
-				<?php 
-				$data = makeQuery($conn,"SELECT * FROM `project`");
+		<div class="project-list">
+			<?php 
+			$data = makeQuery($conn,"SELECT * FROM `project`");
 
-				echo array_reduce($data, 'projectListTemplate');
-				 ?>
-			</div>
+			echo array_reduce($data, 'projectListTemplate');
+			 ?>
 		</div>
 
 		<?php 
