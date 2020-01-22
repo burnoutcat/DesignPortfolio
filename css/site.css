@@ -81,3 +81,7 @@ b{
 .navbar-img{
 	margin-left: 2em;
 }
+
+.navbar-img img{
+	width: 60px;
+}

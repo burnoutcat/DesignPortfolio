@@ -5,5 +5,9 @@
 <link rel="stylesheet" href="css/site.css">
 <link rel="stylesheet" href="css/style.css">
 
+<link rel="stylesheet" href="lib/animate.min.css"><!-- Animated CSS from danedan -->
+
+<script src="lib/jquery-3.4.1.min.js"></script>
+
 
 

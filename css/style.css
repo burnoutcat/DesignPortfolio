@@ -1,6 +1,8 @@
 /*Index.php*/
 
 .index-window{
+	margin-top: 2em;
+	margin-bottom: 8em;
 	align-items: center;
 }
 
@@ -13,4 +15,37 @@
 .index-title h4{
 	position: relative;
 	top:25px;
+}
+
+.feature-window{
+	position: relative;
+	top: -120px;
+}
+
+.feature-title h1{
+	font-size: 2em;
+}
+
+
+/*Index Canvas*/
+
+#index-canvas{
+	width: 100vw;
+	height: 700px;
+	max-width: 1600px;
+	transform: translate(50%,0);
+	right: 50%;
+	display: block;
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+	overflow: hidden;
+	filter: opacity(0.3);
+}
+
+#canvas-1{
+	position: relative;
+	display: block;
+	z-index: 2;
+	height: 100px;
 }
