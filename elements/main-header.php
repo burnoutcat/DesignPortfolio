@@ -1,4 +1,4 @@
-<header class="navbar animated fadeIn">
+<header class="navbar header-container animated fadeIn">
 	<div class="navbar-wrapper flex-wrap flex-align-center flex-parent">
 
 		<input type="checkbox" id="nav-menu" class="hidden">
