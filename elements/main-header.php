@@ -10,7 +10,7 @@
 
 		<div class="nav flex-none">
 			<ul>
-				<li><a href="index.php"><p>Lorem ipsum dolor sit amet, consectetur </p></a></li>
+				<li><a href="skillset.php"><p>Lorem ipsum dolor sit amet, consectetur </p></a></li>
 				<li><a href="portfolio.php"><p>Lorem ipsum dolor sit amet</p></a></li>
 				<li><a href="skillset.php"><p> ipsum dolor sit amet</p></a></li>
 				<li><a class="light-dark-toggle" href="#"><span>Light mode ?</span></a></li>

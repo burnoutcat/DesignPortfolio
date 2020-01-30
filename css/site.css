@@ -7,8 +7,10 @@
 	--site-color-dark-1:#101010;
 	--site-color-dark-0:#000000;
 	--text-color-light-10:#ffffff;
+	--text-color-light-9:#e6e6e6;
 	--text-color-light-8:#dedede;
 	--text-color-light-6:#8c8b8b;
+	--text-color-dark-0:#000000;
 }
 
 
@@ -16,6 +18,14 @@ html{
 	font-family: "Heebo", san-serif;
 	font-family: "Lato" , san-serif;
 	background-color: var(--site-color-dark-1);
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
@@ -32,6 +42,9 @@ html{
 
 body{
 	font-family: inherit;
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 15em;
 }
 
 h1{
@@ -51,6 +64,13 @@ h2{
 	color: var(--text-color-light-6);
 }
 
+h3{
+	font-family: "Heebo" , san-serif;
+	font-size:2em;
+	font-weight: 700;
+	color:var(--text-color-light-10);
+}
+
 h4{
 	font-family: "Heebo", san-serif;
 	font-size: 2em;
@@ -61,7 +81,7 @@ h4{
 p{
 	font-family: "Lato", san-serif;
 	font-size: 1em;
-	color:var(--text-color-light-10);
+	color:var(--text-color-light-8);
 	font-weight: 300;
 }
 
@@ -171,8 +191,10 @@ b{
 /*Footer*/
 
 .footer-window{
-	margin-top: 10em;
-	margin-bottom: 2em;
+	position: absolute;
+	bottom: 2em;
+	right: 0;
+	left: 0;
 }
 
 .social-media-icons{
@@ -194,5 +216,6 @@ b{
 	font-size: 0.7em;
 	width: 400px;
 	font-weight: 300;
-	color: var(--site-color-light-8);
+	color: var(--text-color-light-8);
+
 }

@@ -130,3 +130,99 @@
 	bottom: -2.2em;
 	padding:0 2em 0 3em;
 }
+
+/*Skillset Page*/
+#index-canvas.fixed{
+	top: 0;
+	opacity: 0.5;
+}
+
+.skillset-window{
+	position:relative;
+	margin-bottom: 7em;
+}
+
+.skillset-title{
+	position: absolute;
+	left: 0;
+	top: 2em;
+}
+
+.skillset-detail{
+	margin-top:2em;
+}
+
+.skillset-detail p{
+	background-color: var(--site-color-light-10);
+	color: var(--text-color-dark-0);
+	font-weight: 400;
+	width: fit-content;
+	padding: 0 0.5em 0 0.5em;
+}
+
+.skillset-detail p:not(:first-child){
+	margin-top: 0.5em;
+}
+
+.skill-tabs{
+	width: 300px;
+}
+
+.skill-tabs .tab{
+	margin-bottom: 3em;
+	filter: opacity(0.5);
+	cursor: pointer;
+	transition: 300ms;
+}
+
+.skill-tabs .tab:hover{
+	filter: opacity(0.8);
+	transition: 300ms;
+}
+
+.skill-tabs .tab.active{
+	filter: opacity(1);
+	cursor: default;
+}
+
+.skill-tabs .tab h3{
+	width: 120px;
+	line-height: 35px;
+}
+
+.content-detail p{
+	font-size: 1.2em;
+}
+
+.content-tags{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 600px;
+	margin: 2em 0 2em 0; 
+}
+
+.content-tags .tag{
+	color: var(--text-color-light-8);
+	background-color: var(--site-color-light-6);
+	padding: 0 2em 0 2em;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	border: solid 2px var(--site-color-light-6);
+	border-radius: 7px;
+}
+
+.project-list{
+	width: fit-content;
+}
+
+.project-list .project-thumbnail{
+	max-width: 200px;
+}
+
+.skill-tabs-content .content.active{
+	display: block;
+}
+
+.skill-tabs-content .content{
+	display: none;
+}

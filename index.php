@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Index</title>
+	<title>Designed by Burnoutcat</title>
 
 	<?php include "elements/header-property.php" ?>
 	<script src="js/canvas.js"></script>
 	<script src="js/interaction.js"></script>
 
 </head>
-<body>
+<body onload="indexLoaded()"> <!-- Load Canvas -->
 	<section id="action"> <!-- Canvas Animation Listener -->
 
 		<?php include "elements/main-header.php" ?>
@@ -47,21 +47,21 @@
 				</div>
 			</a>
 		</div>
-				<div class="project-item col-md-3 col-sm-6">
+		<div class="project-item col-md-3 col-sm-6">
 			<a href="#">
 				<div class="project-thumbnail">
 					<img src="img/deyoung.png" class="media-image" alt="deYoung">
 				</div>
 			</a>
 		</div>
-				<div class="project-item col-md-3 col-sm-6">
+		<div class="project-item col-md-3 col-sm-6">
 			<a href="#">
 				<div class="project-thumbnail">
 					<img src="img/gagito.png" class="media-image" alt="Gagito">
 				</div>
 			</a>
 		</div>
-				<div class="project-item col-md-3 col-sm-6">
+		<div class="project-item col-md-3 col-sm-6">
 			<a href="#">
 				<div class="project-thumbnail">
 					<img src="img/telepaz.png" class="media-image" alt="Telepaz">
@@ -113,15 +113,7 @@
 		</div>
 	</div>
 
-	<div class="side-nav">
-		<a href="#"> 
-			<img src="img/linkedin_logo_100.svg" class="media-image" alt="Linkedin">
-		</a>
-		<a href="#">
-			<img src="img/github_logo_100.svg" class="media-image" alt="Github">
-		</a>
-		<canvas id="canvas-4"></canvas>
-	</div>
+	<?php include "elements/side-nav.php" ?>
 
 	<?php include "elements/main-footer.php" ?>
 

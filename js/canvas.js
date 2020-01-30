@@ -1,10 +1,16 @@
-$(document).ready(function(){
+indexLoaded = () => {
 	indexCanvas();
 	canvas01();
 	canvas02();
 	canvas03();
 	canvas04();
-});
+}
+
+skillsetLoaded = () => {
+	canvas04();
+	canvas05();
+	indexCanvasFixed();
+}
 
 
 indexCanvas = () =>{
@@ -44,18 +50,31 @@ indexCanvas = () =>{
   	});
   	action();
 
-	// indexBackground.onload = function()
-	// {
-	// 	action();
-	// };
-
 	indexBackground.src = "img/placeholder_index.png";
 
 	c.width = 1600;
 	c.height = 1000;
 
 	console.log("image loaded");
-	}
+}
+
+
+indexCanvasFixed = () =>{
+	var c = document.getElementById('index-canvas');
+	var ctx = c.getContext('2d');
+	var indexBackground = new Image();
+	indexBackground.src = "img/placeholder_index.png";
+
+
+	c.width = 1600;
+	c.height = 1000;
+
+	indexBackground.addEventListener('load', function(e){
+		ctx.drawImage(indexBackground,0,0,1800,1200);
+	});
+
+}
+
 
 canvas01 = () =>{
 	var c = document.getElementById('canvas-1');
@@ -99,7 +118,6 @@ canvas02 = () => {
 	ctx.lineTo(185,80);
 	ctx.stroke();
 
-	var printer = new Path2D();
 	ctx.fillStyle = '#232323';
 	ctx.beginPath();
 	ctx.moveTo(182,80);
@@ -140,6 +158,39 @@ canvas04 = () => {
 	ctx.moveTo(25,0);
 	ctx.lineTo(25,100);
 	ctx.stroke();
+}
+
+canvas05 = () => {
+	var c = document.getElementById('canvas-5');
+	var ctx = c.getContext('2d');
+
+	c.width = 400;
+	c.height = 150;
+
+	ctx.strokeStyle = '#232323'; 
+	ctx.lineWidth = 3;
+	ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(400,0);
+	ctx.lineTo(400,150);
+	ctx.lineTo(0,150);
+	ctx.lineTo(0,0);
+	ctx.stroke();
+
+	ctx.strokeStyle = '#232323'; 
+	ctx.lineWidth = 1;
+	ctx.beginPath();
+	ctx.moveTo(400,0);
+	ctx.lineTo(280,55);
+	ctx.stroke();
+
+	ctx.fillStyle = '#232323';
+	ctx.beginPath();
+	ctx.moveTo(290,57);
+	ctx.lineTo(276,57);
+	ctx.lineTo(285,47);
+	ctx.fill();
+
 }
 
 
