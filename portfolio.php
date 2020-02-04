@@ -1,3 +1,10 @@
+<?php 
+
+require_once "lib/php/helper.php";
+require_once "elements/templates.php";
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,66 +43,22 @@
 			</div>
 		</div>
 		<div class="portfolio-list-detail listview">
-			<div class="portfolio-item flex-align-center flex-parent col-md-3 col-sm-6">
-				<div class="image">
-					<img src="img/gagito.png" class="media-image"alt="gagito">
-				</div>
-				<div class="text-wrapper flex-child">
-					<div class="title flex-parent">
-						<div class="name">
-							<b>Gagito.com</b>
-						</div>
-						<div class="category">
-							<p>UI/UX Design</p>
-						</div>
-					</div>
-					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptate aut porro, error perferendis fugiat laboriosam maiores in aperiam unde.</p>
-					</div>
-					<div class="tag">
-						<span>CSS</span>
-						<span>JavaScript</span>
-					</div>
-				</div>
-				<div class="links flex-parent flex-align-center">
-					<a class="github icon flex-none" href="#"> 
-						<img src="img/github_logo_100.svg" class="media-image" alt="github">
-					</a>
-					<a class="egress icon flex-none" href="#">
-						<img src="img/egress.svg" class="media-image" alt="link to project">
-					</a>					
-				</div>
-			</div>
-			<div class="portfolio-item flex-align-center flex-parent col-md-3 col-sm-6">
-				<div class="image">
-					<img src="img/huedisco.png" class="media-image"alt="gagito">
-				</div>
-				<div class="text-wrapper flex-child">
-					<div class="title flex-parent">
-						<div class="name">
-							<b>Hue Disco</b>
-						</div>
-						<div class="category">
-							<p>UI/UX Design</p>
-						</div>
-					</div>
-					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptate aut porro, error perferendis fugiat laboriosam maiores in aperiam unde.</p>
-					</div>
-					<div class="tag">
-						<span>CSS</span>
-						<span>JavaScript</span>
-					</div>
-				</div>
-				<div class="links flex-parent flex-align-center">
-					<a class="github icon flex-none" href="#"> 
-						<img src="img/github_logo_100.svg" class="media-image hidden" alt="github">
-					</a>
-					<a class="egress icon flex-none" href="#">
-						<img src="img/egress.svg" class="media-image" alt="link to project">
-					</a>					
-				</div>
-			</div>
+			<?php 
+
+				$result = makeQuery(
+					makeConn(),
+					"
+					SELECT * 
+					FROM `project`
+					ORDER BY date_create DESC
+					"
+				);
+
+					echo array_reduce($result,
+					'projectList');
+
+	
+			 ?>	
 		</div>
 	</div>
 

@@ -8,6 +8,8 @@
 		"name"=>"",
 		"category"=>"",
 		"sub_title"=>"",
+		"tags"=>"",
+		"link"=>"",
 		"description_main"=>"",
 		"title_2"=>"",
 		"description_2"=>"",
@@ -41,6 +43,8 @@
 			`name`=?,
 			`category`=?,
 			`sub_title`=?,
+			`tags`=?,
+			`link`=?,
 			`description_main`=?,
 			`title_2`=?,
 			`description_2`=?,
@@ -69,10 +73,12 @@
 			WHERE `id` =?
 		");
 
-			$statement->bind_param("sssssssssssssssssssssssssssi",
+			$statement->bind_param("sssssssssssssssssssssssssssssi",
 				$_POST["name"],
 				$_POST["category"],
 				$_POST["sub_title"],
+				$_POST["tags"],
+				$_POST["link"],
 				$_POST["description_main"],
 				$_POST["title_2"],
 				$_POST["description_2"],
@@ -113,6 +119,8 @@
 					`name`,
 					`category`,
 					`sub_title`,
+					`tags`,
+					`link`,
 					`description_main`,
 					`title_2`,
 					`description_2`,
@@ -140,12 +148,14 @@
 					`date_modify`,
 					`date_create`
 				)
-				VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())			
+				VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())			
 				");
-				$statement->bind_param("sssssssssssssssssssssssssss",
+				$statement->bind_param("sssssssssssssssssssssssssssss",
 					$_POST["name"],
 					$_POST["category"],
 					$_POST["sub_title"],
+					$_POST["tags"],
+					$_POST["link"],
 					$_POST["description_main"],
 					$_POST["title_2"],
 					$_POST["description_2"],
@@ -244,6 +254,14 @@ echo <<<HTML
 		<div class="input-detail flex-parent input-subtitle">
 			<p class="flex-child">Subtitle</p>
 			<input id="sub_title" type="text" name="sub_title" value="$o->sub_title">
+		</div>
+		<div class="input-detail flex-parent input-subtitle">
+			<p class="flex-child">Tags</p>
+			<input id="tags" type="text" name="tags" value="$o->tags">
+		</div>
+		<div class="input-detail flex-parent input-subtitle">
+			<p class="flex-child">Link</p>
+			<input id="link" type="text" name="link" value="$o->link">
 		</div>
 		<div class="input-detail flex-parent input-image-thumb">
 			<p class="flex-child">Thumbnail Image</p>
@@ -438,7 +456,7 @@ HTML;
 
 		<div class="project-list">
 			<?php 
-			$data = makeQuery($conn,"SELECT * FROM `project`");
+			$data = makeQuery($conn,"SELECT * FROM `project` ORDER BY date_create DESC");
 
 			echo array_reduce($data, 'projectListTemplate');
 			 ?>
