@@ -4,6 +4,8 @@
 	--site-color-light-10:#ffffff;
 	--site-color-light-8:#d8d7d7;
 	--site-color-light-6:#737373;
+	--site-color-dark-5:#2f2f2f;
+	--site-color-dark-2:#212121;
 	--site-color-dark-1:#101010;
 	--site-color-dark-0:#000000;
 	--text-color-light-10:#ffffff;
@@ -37,6 +39,7 @@ html{
 	filter: grayscale(0.7) opacity(0.5);
 	transition: 500ms;
 }
+
 
 /*Typographic*/
 
@@ -90,6 +93,14 @@ b{
 	font-size: 1em;
 	color: var(--text-color-light-10);
 	font-weight: 400;
+}
+
+.highlighted p{
+	background-color: var(--site-color-light-10);
+	color: var(--text-color-dark-0);
+	font-weight: 400;
+	width: fit-content;
+	padding: 0 0.5em 0 0.5em;
 }
 
 

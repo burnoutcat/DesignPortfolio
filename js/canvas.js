@@ -3,11 +3,9 @@ indexLoaded = () => {
 	canvas01();
 	canvas02();
 	canvas03();
-	canvas04();
 }
 
 skillsetLoaded = () => {
-	canvas04();
 	canvas05();
 	indexCanvasFixed();
 }
@@ -145,20 +143,6 @@ canvas03 = () => {
 
 }
 
-canvas04 = () => {
-	var c = document.getElementById('canvas-4');
-	var ctx = c.getContext('2d');
-
-	c.width = 50;
-	c.height = 100;
-
-	ctx.strokeStyle = 'white';
-	ctx.lineWidth = 0.5;
-	ctx.beginPath();
-	ctx.moveTo(25,0);
-	ctx.lineTo(25,100);
-	ctx.stroke();
-}
 
 canvas05 = () => {
 	var c = document.getElementById('canvas-5');

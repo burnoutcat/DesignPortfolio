@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	deselectItem();
 	tabSelect();
+	iconSelect();
 })
 
 deselectItem = () =>{
@@ -21,6 +22,19 @@ tabSelect = (e) =>{
 		$(".skill-tabs-content .content").eq(id).addClass("active animated fadeIn").siblings().removeClass("active animated fadeIn");
 	})
 } 
+
+iconSelect = (e) =>{
+	$(".sort-icons .icon").on("click",function(e){
+		let id = $(this).index();
+		if (id == 0 || null){
+			$(this).addClass("active").siblings().removeClass("active");
+
+		} else{
+			$(this).addClass("active").siblings().removeClass("active");
+		}
+	})
+}
+
 
 
 

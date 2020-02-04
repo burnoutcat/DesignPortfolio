@@ -22,7 +22,7 @@
 		</div>
 		<div class="flex-child">
 			<canvas id="canvas-5"></canvas>
-			<div class="skillset-detail">
+			<div class="highlighted skillset-detail">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, reprehenderit.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur.</p>
