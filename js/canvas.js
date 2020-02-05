@@ -1,8 +1,19 @@
+var is_chrome = (typeof window.chrome === "object" && navigator.appVersion.indexOf('Edge') === -1);
+
+
 indexLoaded = () => {
-	indexCanvas();
-	canvas01();
-	canvas02();
-	canvas03();
+	console.log(is_chrome);
+	if(is_chrome == 1){
+		indexCanvas();
+		canvas01();
+		canvas02();
+		canvas03();
+	} else {
+		indexCanvasFixed();
+		canvas01();
+		canvas02();
+		canvas03();
+	}
 }
 
 skillsetLoaded = () => {

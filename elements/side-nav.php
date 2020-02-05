@@ -1,8 +1,8 @@
 <div class="side-nav" onload="canvas04()">
-	<a href="#"> 
+	<a href="www.linkedin.com/in/jackyzhengdesign" target="_blank"> 
 		<img src="img/linkedin_logo_100.svg" class="media-image" alt="Linkedin">
 	</a>
-	<a href="#">
+	<a href="https://github.com/burnoutcat" target="_blank">
 		<img src="img/github_logo_100.svg" class="media-image" alt="Github">
 	</a>
 	<canvas id="canvas-4"></canvas>

@@ -331,8 +331,13 @@
 	transition: 200ms;
 }
 
+.portfolio-item .links a[href=""]{
+	display: none;
+}
+
 .portfolio-item .links a:hover{
 	opacity: 1;
 	transition: 200ms;
 }
+
 

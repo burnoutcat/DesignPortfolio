@@ -6,10 +6,12 @@
 
 	$empty_project = (object) [
 		"name"=>"",
+		"featured"=>"0",
 		"category"=>"",
 		"sub_title"=>"",
 		"tags"=>"",
 		"link"=>"",
+		"git"=>"",
 		"description_main"=>"",
 		"title_2"=>"",
 		"description_2"=>"",
@@ -41,10 +43,12 @@
 
 			$statement = $conn->prepare("UPDATE `project` SET 
 			`name`=?,
+			`featured`=?,
 			`category`=?,
 			`sub_title`=?,
 			`tags`=?,
 			`link`=?,
+			`git`=?,
 			`description_main`=?,
 			`title_2`=?,
 			`description_2`=?,
@@ -73,12 +77,14 @@
 			WHERE `id` =?
 		");
 
-			$statement->bind_param("sssssssssssssssssssssssssssssi",
+			$statement->bind_param("sisssssssssssssssssssssssssssssi",
 				$_POST["name"],
+				$_POST["featured"],
 				$_POST["category"],
 				$_POST["sub_title"],
 				$_POST["tags"],
 				$_POST["link"],
+				$_POST["git"],
 				$_POST["description_main"],
 				$_POST["title_2"],
 				$_POST["description_2"],
@@ -117,10 +123,12 @@
 			$statement = $conn->prepare("INSERT INTO `project`
 				(
 					`name`,
+					`featured`,
 					`category`,
 					`sub_title`,
 					`tags`,
 					`link`,
+					`git`,
 					`description_main`,
 					`title_2`,
 					`description_2`,
@@ -148,14 +156,16 @@
 					`date_modify`,
 					`date_create`
 				)
-				VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())			
+				VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())			
 				");
-				$statement->bind_param("sssssssssssssssssssssssssssss",
+				$statement->bind_param("sisssssssssssssssssssssssssssss",
 					$_POST["name"],
+					$_POST["featured"],
 					$_POST["category"],
 					$_POST["sub_title"],
 					$_POST["tags"],
 					$_POST["link"],
+					$_POST["git"],
 					$_POST["description_main"],
 					$_POST["title_2"],
 					$_POST["description_2"],
@@ -249,7 +259,11 @@ echo <<<HTML
 		</div>
 		<div class="input-detail flex-parent input-category">
 			<p class="flex-child">Category</p>
-			<input id="category" type="text" name="category" value="$o->category">
+			<div class="flex-none flex-parent" style="width: 80%;">
+				<input id="category" type="text" name="category" value="$o->category">
+				<p class="flex-none" style="margin: 0 1em 0 1em;">Featured</p>
+				<input id="featured" style="width: 150px;" type="text" name="featured" value="$o->featured">
+			</div>
 		</div>
 		<div class="input-detail flex-parent input-subtitle">
 			<p class="flex-child">Subtitle</p>
@@ -262,6 +276,10 @@ echo <<<HTML
 		<div class="input-detail flex-parent input-subtitle">
 			<p class="flex-child">Link</p>
 			<input id="link" type="text" name="link" value="$o->link">
+		</div>
+		<div class="input-detail flex-parent input-subtitle">
+			<p class="flex-child">Github</p>
+			<input id="git" type="text" name="git" value="$o->git">
 		</div>
 		<div class="input-detail flex-parent input-image-thumb">
 			<p class="flex-child">Thumbnail Image</p>

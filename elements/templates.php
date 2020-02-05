@@ -1,11 +1,11 @@
 <?php 
 
-
 function projectList($carry,$item){
 $tags = array_reduce(
 	explode(",", $item->tags),
 	function($c,$i){return $c."<span>$i</span>";}
 );
+
 
 return $carry.<<<HTML
 
@@ -30,18 +30,17 @@ return $carry.<<<HTML
 		</div>
 	</div>
 	<div class="links flex-parent flex-align-center">
-		<a class="github icon flex-none" href="#"> 
+		<a class="github icon flex-none" href="$item->git"> 
 			<img src="img/github_logo_100.svg" class="media-image" alt="github">
 		</a>
-		<a class="egress icon flex-none" href="$item->link">
+		<a class="egress icon flex-none" href="$item->link" target="_blank">
 			<img src="img/egress.svg" class="media-image" alt="link to project">
 		</a>					
 	</div>
 </div>
 
-
-
 HTML;
+
 
 }
 

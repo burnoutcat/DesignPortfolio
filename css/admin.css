@@ -63,7 +63,7 @@ button{
 	margin: 0 auto;
 }
 
-.input-detail input{
+.input-detail input {
 	border: 1px solid #e4e4e4;
     background-color: white;
     text-align: left;
@@ -98,6 +98,11 @@ button{
     font-size: 0.88em;
     font-weight: 300;
     color: #0a0a0a;
+}
+
+.checkbox:checked{
+    background-color: black;
+
 }
 
 .input-detail:not(:first-child){
