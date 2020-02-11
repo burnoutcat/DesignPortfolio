@@ -1,5 +1,5 @@
 html{
-    background-color: #F3F3F3;
+    background-color: #ffffff;
     -webkit-appearance: none;
     min-width: 900px;
 }
@@ -15,30 +15,36 @@ button{
 /*Buttons*/
 
 .admin-grey-button{
-    border:solid grey;
-    background-color: grey;
-    color: white;
+    border: solid 1px grey;
+    background-color: transparent;
+    color: grey;
     height: 100%;
+    border-radius: 5px;
     outline: none;
     padding: 0 2em 0 2em;
     font-size: 0.8em;
     font-weight: 400;
 }
 
+.admin-grey-button:hover{
+    background-color: #f7f7f7;
+}
+
 .admin-blue-button{
-    border:solid #435863;
-    background-color: #435863;
-    color: white;
+    border: solid 1px #546E7A;
+    background-color: transparent;
+    color: #282a2b;
     height: 100%;
     outline: none;
+    border-radius: 5px;
     padding: 0 2em 0 2em;
     font-size: 0.8em;
     font-weight: 400;
 }
 
 .admin-blue-button:hover{
-    background-color: #7e8e96;
-    border:solid #7e8e96;
+    background-color: #e8eef1;
+    border: solid 1px #7e8e96;
 }
 
 .admin-transparent-button{
@@ -59,12 +65,12 @@ button{
 
 
 .input-form{
-	max-width: 1200px;
-	margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .input-detail input {
-	border: 1px solid #e4e4e4;
+    border: 1px solid #e4e4e4;
     background-color: white;
     text-align: left;
     font-family: 'Reebo',sans-serif;
@@ -84,8 +90,8 @@ button{
 }
 
 .input-detail textarea{
-	width: 80%;
-	border: 1px solid #e4e4e4;
+    width: 80%;
+    border: 1px solid #e4e4e4;
     background-color: white;
     text-align: left;
     font-family: 'Reebo',sans-serif;
@@ -114,12 +120,13 @@ button{
 .admin-header{
     width: 100%;
     height: 80px;
-    background-color: #334F5C;
+    border-bottom: solid 1.5px #CFD8DC;
+    background-color: #fdfdfd;
 }
 
 .admin-site-name{
     width: 200px;
-    color: white;
+    color: #37474F;
     padding: 0 2em 0 2em;
 }
 
@@ -136,12 +143,12 @@ button{
 }
 
 .admin-site-title{
-    border-left: solid white 1px; 
+    border-left: solid #607D8B 1px;
     padding-left: 0.8em;
 }
 
 .admin-site-title h3{
-    color: white;
+    color: #607D8B;
     font-weight: 300;
     letter-spacing: 1.1px;
 }
@@ -157,13 +164,13 @@ button{
 }
 
 .menu-window{
-    background-color: #DDDDDD;
+    background-color: #f9f9f9;
     width: 200px;
     position: relative;
 }
 
 .admin-search{
-    background-color: #25293B;
+    background-color: #cfd8dc;
     padding: 1.5em 0 1.5em 0;
     text-align: center;
 }
@@ -183,18 +190,18 @@ button{
 .filter-categories a{
     display: block;
     padding: 1em 0 1em 2.5em;
-    color: white;
+    color: #263238;
     font-weight: 300;
     font-size: 0.9em;
-    background-color: #25293B;
+    background-color: #CFD8DC;
 }
 
 .list-selection.active{
-    background-color:#334F5C;
+    background-color: #B0BEC5;
 }
 
 .filter-categories a:hover{
-    background-color:#334F5C;
+    background-color: #B0BEC5;
 }
 
 .admin-logout{
@@ -223,24 +230,26 @@ button{
     padding: 1.5em 1.5em 0 1.5em;
     max-width: 1500px;
     overflow: scroll;
+    background-color: #ffffff;
 }
 
 .project-window h1{
-    margin: 0em 0 1em 0; 
+    margin: 0em 0 1em 0;
     font-size: 1.3em;
     font-weight: 400;
-
+    color: #455A64;
 }
 
 .sortandadd-window{
     margin: 1em 0 1em 0;
+    padding-right: 0.8em;
 }
 
 .project-view{
-    background-color: white;
-    padding: 0.9em 0.5em 0.9em 0.5em; 
-    letter-spacing: 0.5px; 
-    color: #334F5C;
+    background-color: #ffffff;
+    padding: 0.3em 0.3em;
+    letter-spacing: 0.5px;
+    color: #466675;
 }
 
 .project-view h2{
@@ -253,8 +262,8 @@ button{
 
 .project-list{
     background-color: white;
-    padding: 1em 1em 0 1em;
-    border-top: solid #dddddd 20px;
+    padding: 1em 0em;
+    border-top: solid #5f6365 1px;
     min-width: 275px;
     height: calc(100vh - 225px);
     overflow: scroll;
@@ -274,6 +283,10 @@ button{
 
 .project-list-thumbs{
     width: 90px;
+}
+
+.project-list-thumbs img{
+    box-shadow: 2px 2px 5px #e8ebec;
 }
 
 .project-list-title{
@@ -322,7 +335,7 @@ button{
 /*Product Edit Form*/
 .edit-project-window{
     background-color: white;
-    padding: 1em 2em;
+    padding: 1em 0em;
 }
 
 .edit-project-form-title{
@@ -337,7 +350,7 @@ button{
 .input-detail p{
     font-weight: 300;
     font-size: 0.8em;
-    color: #797979;
+    color: #333333;
 }
 
 .edit-control{

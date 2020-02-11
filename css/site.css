@@ -8,11 +8,13 @@
 	--site-color-dark-2:#212121;
 	--site-color-dark-1:#101010;
 	--site-color-dark-0:#000000;
+	--site-color-light-alpha:#e8e7e754;
 	--text-color-light-10:#ffffff;
 	--text-color-light-9:#e6e6e6;
 	--text-color-light-8:#dedede;
+	--text-color-light-7:#a9a9a9;
 	--text-color-light-6:#8c8b8b;
-	--text-color-dark-0:#000000;
+	--text-color-dark-0:#000007;
 }
 
 
@@ -124,7 +126,7 @@ b{
 
 
 .nav p{
-	background-color: var(--site-color-light-6);
+	background-color: var(--site-color-light-10);
 	color:var(--site-color-dark-0);
 	font-size: 0.8em;
 	font-weight: 700;
@@ -134,7 +136,11 @@ b{
 	padding: 0 0.5em 0 0.5em;
 }
 
-.nav p:hover{
+.nav a p{
+	background-color: var(--site-color-light-alpha);
+}
+
+.nav a p:hover{
 	background-color: var(--site-color-light-10);
 }
 
@@ -144,6 +150,20 @@ b{
 
 .navbar-img img{
 	width: 60px;
+}
+
+/*Prototype Navbar*/
+.portfolio.navbar{
+	width: 90%;
+	height: 100px; 
+}
+
+.portfolio.header-container{
+	max-width: 1600px;
+}
+
+.portfolio .navbar-wrapper{
+	width: initial;
 }
 
 /*button*/

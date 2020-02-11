@@ -227,8 +227,8 @@
 /*portfolio page*/
 
 .portfolio-window{
-	margin-top: 3em;
-	margin-bottom: 5em;
+	margin-top: 4em;
+	margin-bottom: 8em;
 }
 
 .portfolio-title p{
@@ -308,7 +308,7 @@
 	flex-wrap: wrap;
 }
 
-.portfolio-item .text-wrapper .tag span{
+.tag span{
     color: var(--text-color-light-8);
     background-color: var(--site-color-dark-5);
     padding: 0 1.5em 0 1.5em;
@@ -340,4 +340,195 @@
 	transition: 200ms;
 }
 
+/*Portfolio Detail Page*/
+
+.project-banner-window{
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 1800px;
+	top: 0;
+	z-index: -1;
+}
+
+.project-banner-textwrapper{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 10em;
+}
+
+.project-banner-title h4{
+	margin-top: -1.2em;
+    padding-left: 2px;
+    color: var(--text-color-light-8);
+    font-size: 1.5em;
+}
+
+.project-banner-detail{
+	width: 450px;
+    margin-top: 1.4em;
+}
+
+.project-banner-detail p{
+	font-size: 1.1em;
+}
+
+.project-banner-tag{
+    width: 350px;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.project-banner-tag span{
+	padding: 0 2em 0 2em;
+	background-color: var(--site-color-light-alpha);
+	border: soild 2px var(--site-color-light-alpha);
+}
+
+
+.project-banner-control{
+	position: absolute;
+	width: 600px;
+	height: 100px;
+	background-color: var(--site-color-dark-2);
+	border-radius: 15px;
+	right: 5%;
+	bottom: -6%;
+	box-shadow: 5px 5px 10px #101010;
+}
+
+.project-banner-control .text-wrapper{
+	height: 100%;
+	padding: 0 1.5em 0 1.5em;
+} 
+
+.project-banner-control .date{
+	margin-right: 2em;
+}
+
+.project-banner-control h4{
+	font-size: 0.8em;
+}
+
+.project-banner-control p{
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.project-banner-control .links img{
+	width: 20px; 
+}
+
+.project-banner-control .links a{
+	position: relative;
+	z-index: 10;
+}
+
+.project-banner-control .links a:first-child{
+	margin-right: 1.5em;
+}
+
+
+/*Portforlio Content*/
+.portfolio-content-detail.container{
+	max-width: 1000px; 
+}
+
+.portfolio-content .main-description{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 650px;
+}
+
+.portfolio-content .main-description h3{
+	font-weight: 300;
+	color: var(--text-color-light-6);
+}
+
+.portfolio-content .main-description h3 > b{
+	font-weight: 700;
+}
+
+#canvas06{
+	height: 400px;
+	width: 100%;
+}
+
+.description-2,.description-3,.description-4,.description-5,.description-6{
+	margin-top: 9em;
+}
+
+
+.description-2 .project-image,.description-3 .project-image,.description-6 .project-image{
+	max-width: 350px;
+}
+
+.description-2 .text,.description-6 .text {
+	margin-right: 6em;
+}
+
+.description-2 .title,.description-3 .title,.description-5 .title,.description-6 .title{
+	margin-bottom: 1.5em;
+}
+
+.description-2 .text h3,.description-3 .text h3,.description-4 .text h3,.description-5 .text h3,.description-6 .text h3{
+	font-weight: 400;
+}
+
+.description-2 .text p,.description-3 .text p,.description-5 .text p,.description-6 .text p{
+	font-size: 1.2em;
+	line-height: 25px;
+	color: var(--text-color-light-7);
+}
+
+.description-3 .text{
+	margin-left: 6em;
+}
+
+.description-4 .text{
+	flex-wrap: wrap;
+	width: 300px;
+	padding: 1em;
+	background-color: var(--site-color-dark-5);
+	margin-right: 2em;
+}
+
+#canvas07{
+	width: 100%;
+	height: 80px; 
+}
+
+
+.description-4{
+	margin-bottom: 15em;
+}
+
+.description-4 .text h3{
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+.description-4 .text p{
+	font-size: 1em;
+	line-height: 22px;
+	color: var(--site-color-light-8);
+}
+
+.description-4 .project-image{
+	text-align: center;
+}
+
+.description-4 .project-image img{
+	max-width: 500px; 
+}
+
+.description-5{
+	margin-bottom: 3em;
+}
+
+.description-5 .text{
+	margin-bottom: 3em;
+}
 

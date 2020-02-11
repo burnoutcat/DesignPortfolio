@@ -17,8 +17,11 @@ require_once "elements/templates.php";
 
 
 </head>
-<body>
+<body onload="portfolioLoaded()">
+	
 	<?php include "elements/main-header.php"?>
+
+	<canvas id="index-canvas" class="fixed"></canvas>
 
 	<div class="portfolio-window container flex-parent flex-align-center">
 		<div class="flex-child portfolio-title highlighted">

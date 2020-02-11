@@ -21,6 +21,15 @@ skillsetLoaded = () => {
 	indexCanvasFixed();
 }
 
+portfolioLoaded = () =>{
+	indexCanvasFixed();
+}
+
+portfoliodetailLoaded = () =>{
+	canvas06();
+	if (true) {}
+}
+
 
 indexCanvas = () =>{
 	var c = document.getElementById('index-canvas');
@@ -186,6 +195,48 @@ canvas05 = () => {
 	ctx.lineTo(285,47);
 	ctx.fill();
 
+}
+
+canvas06 = () => {
+	var c = document.getElementById('canvas-6');
+	var ctx = c.getContext('2d');
+
+	c.width = 1000;
+	c.height = 400;
+
+	ctx.strokeStyle = 'white';
+	ctx.lineWidth = 2;
+	ctx.beginPath();
+	ctx.moveTo(485,30);
+	ctx.lineTo(500,50);
+	ctx.lineTo(515,30);
+	ctx.stroke();
+
+	ctx.strokeStyle = '#969696';
+	ctx.lineWidth = 2;
+	ctx.beginPath();
+	ctx.moveTo(500,100);
+	ctx.lineTo(500,380);
+	ctx.lineTo(10,380);
+	ctx.lineTo(10,399)
+	ctx.stroke();
+
+}
+
+canvas07 = () =>{
+	var c = document.getElementById('canvas-7');
+	var ctx = c.getContext('2d');
+
+	c.width = 600;
+	c.height = 60;
+
+	ctx.strokeStyle = 'white';
+	ctx.lineWidth = 1;
+	ctx.beginPath();
+	ctx.moveTo(10,20);
+	ctx.lineTo(350,20);
+	ctx.lineTo(350,50);
+	ctx.stroke();
 }
 
 
