@@ -43,7 +43,7 @@
 		<div class="flex-child skill-tabs-content">
 			<div class="content active"> <!-- Websites -->
 				<div class="content-detail">
-					<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.</p>
+					<p>It was really hard for me to describe how much I am enjoying design, especially for web design. I love design projects that are   pixel-perfected across all screen sizes, and finetune CSS for maximum responsiveness. I’d like to prioritize usability and accessibility over visual presentation because I want my design to be understood by mass audiences. </p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">HTML</div>
@@ -85,7 +85,7 @@
 			</div>
 			<div class="content"> <!-- UI -->
 				<div class="content-detail">
-					<p><b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.</p>
+					<p>I am a huge tech savvy guy and I have used an extremely wide range of devices, from smart toothbrush to varies automobile UI. Some of these UIs are visually fancy and packed with features in single page, and complex and hard to navigate. In my process of designing user interfaces, I always consider hierarchy, and to build products that are intuitive. </p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">HTML</div>
@@ -127,7 +127,7 @@
 			</div>
 			<div class="content"> <!-- Graphic Design -->
 				<div class="content-detail">
-					<p> <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit</p>
+					<p> I do graphic design (logo, packaging, branding, web banner) and digital illustration primary based on emphasis and balance. I love working with typographic and color as they are strong tools for appealing designs.</p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">HTML</div>

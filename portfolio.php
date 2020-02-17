@@ -34,7 +34,7 @@ require_once "elements/templates.php";
 	</div>
 
 	<div class="portfolio-list-window container">
-		<div class="portfolio-sort-window flex-parent">
+		<!-- <div class="portfolio-sort-window flex-parent">
 			<div class="flex-child" style="content: '';"></div>
 			<div class="flex-none sort-icons flex-parent">
 				<div class="icon active" id="listview">
@@ -44,7 +44,7 @@ require_once "elements/templates.php";
 					<img src="img/gridview.svg" alt="gridview">
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="portfolio-list-detail listview">
 			<?php 
 

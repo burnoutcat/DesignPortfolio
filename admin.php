@@ -227,7 +227,7 @@ return $carry. <<<HTML
 		<p>$item->date_modify</p>
 	</div>
 	<div class="project-list-control">
-		<button class="admin-transparent-button" onclick="location.href='portfolio-detail.php?id=$item->id'">Visit</button>
+		<button class="admin-transparent-button" onclick="window.open('portfolio-detail.php?id=$item->id');">Visit</button>
 		<button class="admin-transparent-button" onclick="location.href='?id=$item->id'">Edit</button>
 	</div>
 </div>
@@ -436,11 +436,11 @@ HTML;
 				<input type="search" class="search-input list-search" placeholder="Search Projects">
 			</form>
 			<nav class="filter-categories">
-				<a href="admin.php" class="list-filter list-selection active" data-value="All Projects">All Projects</a>
-				<a href="#" class="list-filter list-selection" data-value="UI/UX Designs">UI/UX Design</a>
-				<a href="#" class="list-filter list-selection" data-value="Motion Graphics">Motion Graphic</a>
-				<a href="#" class="list-filter list-selection" data-value="Graphic Designs">Graphic Designs</a>
-				<a href="#" class="list-filter list-selection" data-value="Others">Others</a>
+				<a href="admin.php" class="list-filter list-selection active" data-value="All Projects">Projects</a>
+				<a href="#" class="list-filter list-selection" data-value="UI/UX Designs">Photo Gallery</a>
+				<a href="#" class="list-filter list-selection" data-value="Motion Graphics">Skillset</a>
+				<a href="#" class="list-filter list-selection" data-value="Graphic Designs">Home Page</a>
+				<a href="#" class="list-filter list-selection" data-value="Others">Revision Doc.</a>
 			</nav>
 			<div class="admin-logout align-center">
 				<a href="#">Log out</a>

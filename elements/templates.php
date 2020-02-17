@@ -48,7 +48,9 @@ $tags = array_reduce(
 	function($c,$i){return $c."<span>$i</span>";}
 );
 
-$cssName = str_replace(" ","-",$item->name);
+$cssName = str_replace(" ","-",
+	strtolower("$item->name")
+);
 
 return $carry.<<<HTML
 
@@ -60,8 +62,8 @@ return $carry.<<<HTML
 		<div class="flex-child" style="content: '';"></div>
 		<div class="nav flex-none">
 			<ul>
-				<li><p>Lorem ipsum dolor sit amet, consectetur </p></li>
-				<li><a href="portfolio.php"><p>Lorem ipsum dolor sit amet</p></a></li>
+				<li><p>>> now viewing  <b>[ $item->name ]</b> << </p></li>
+				<li><a href="pdf/zheng-resume-2020.pdf" target="_blank"><p>download resume --></p></a></li>
 			</ul>
 		</div>
 	</div>	
@@ -81,7 +83,8 @@ return $carry.<<<HTML
 				$tags
 			</div>
 		</div>
-		<div class="project-banner-control">
+	</div>
+	<div class="project-banner-control">
 			<div class="text-wrapper flex-parent flex-align-center">
 				<div class="date flex-none">
 					<h4>Project Date</h4>
@@ -103,7 +106,6 @@ return $carry.<<<HTML
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<div class="portfolio-content-detail container">
 
@@ -187,6 +189,21 @@ return $carry.<<<HTML
 	</div>
 
 
+</div>
+
+HTML;
+}
+
+function projectFeatured($carry,$item){
+
+return $carry.<<<HTML
+
+<div class="project-item col-md-3 col-sm-6">
+	<a href="portfolio-detail.php?id=$item->id">
+		<div class="project-thumbnail">
+			<img src="img/$item->image_thumbnail" class="media-image" alt="$item->name">
+		</div>
+	</a>
 </div>
 
 HTML;

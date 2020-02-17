@@ -1,5 +1,5 @@
 <div class="side-nav" onload="canvas04()">
-	<a href="www.linkedin.com/in/jackyzhengdesign" target="_blank"> 
+	<a href="https://linkedin.com/in/jackyzhengdesign" target="_blank"> 
 		<img src="img/linkedin_logo_100.svg" class="media-image" alt="Linkedin">
 	</a>
 	<a href="https://github.com/burnoutcat" target="_blank">

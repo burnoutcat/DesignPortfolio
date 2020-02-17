@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+require_once "lib/php/helper.php";
+require_once "elements/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -22,7 +27,7 @@
 				<h1>burnoutcat</h1>
 			</div>
 			<div class="index-detail">
-				<p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing</b> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b> Ut enim ad minim veniam</b>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p>I’m <b>Jacky Zheng</b>, a tech enthusiast who enjoys exploring new technologies and trends. I design <b>user interfaces</b>, <b>digital graphics</b>, and <b>websites</b> that understand user needs. I been well known as a great <b>team-player</b> and well-adapted to rapidly growing industry. </p>
 			</div>
 		</div>
 
@@ -40,40 +45,31 @@
 
 
 	<div class="feature-project-window row container">
-		<div class="project-item col-md-3 col-sm-6">
-			<a href="#">
-				<div class="project-thumbnail">
-					<img src="img/huedisco.png" class="media-image" alt="Hue Disco">
-				</div>
-			</a>
-		</div>
-		<div class="project-item col-md-3 col-sm-6">
-			<a href="#">
-				<div class="project-thumbnail">
-					<img src="img/deyoung.png" class="media-image" alt="deYoung">
-				</div>
-			</a>
-		</div>
-		<div class="project-item col-md-3 col-sm-6">
-			<a href="#">
-				<div class="project-thumbnail">
-					<img src="img/gagito.png" class="media-image" alt="Gagito">
-				</div>
-			</a>
-		</div>
-		<div class="project-item col-md-3 col-sm-6">
-			<a href="#">
-				<div class="project-thumbnail">
-					<img src="img/telepaz.png" class="media-image" alt="Telepaz">
-				</div>
-			</a>
-		</div>
+		<?php 
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT *
+			FROM `project`
+			WHERE `featured` = 1
+			ORDER BY date_create DESC
+			LIMIT 4
+			
+			"
+		);
+
+			echo array_reduce($result,
+			'projectFeatured');
+
+
+		 ?>
 	</div>
 
 	<div class="all-project-button container flex-parent">
 		<div class="flex-child" style="content: '';"></div>
 		<div class="nav">
-			<a href="#"><p>>> all projects</p></a>
+			<a href="portfolio.php"><p>>> all projects</p></a>
 		</div>
 
 	</div>
@@ -82,10 +78,12 @@
 
 	<div class="flex-parent index-about-window container">
 		<div class="flex-none index-about-text">
-			<h2>Lorem ipsum dolor sit amet, <span>consectetur </span>adipisicing elit. Facilis, libero, ex odit fugit possimus ullam vitae in ad deserunt fugiat <span>voluptas</span> atque non consequuntur. Minima accusamus deleniti odio aliquid veritatis vero ad quaerat odit <span>molestiae</span>, sed dolor architecto dolorum molestias sit eius ipsa et 
-			pariatur iure, officia officiis eligendi. Facere!</h2>
+			<h2>Think about my design process. I love to research <span>design trends</span> and <span>user behaviors</span>, and quickly design prototypes that are <span>intuitive</span> and <span>scalable</span>.  I am more than happy to demonstrate my ideas via low or high-fidelity prototype using Sketch, Adobe XD, and Figma. I love to build websites and interactive prototypes using <span>HTML5/CSS3</span> and <span>JavaScript/jQuery</span>. In the matter of fact, this website you’re visiting is completely designed and written by me.</h2>
 
-			<a href="#">Lorem ipsum dolor sit amet</a>
+			<h2>While I am not designing, I’d like to go out doing videography and photography. <br>
+			<span>Feel free to grab a coffee with me!</span> </h2>
+
+			<a href="https://jackyjian.com/" target="_Blank">Click here to view my video production work -> </a>
 
 		</div>
 		
@@ -106,7 +104,7 @@
 						<button class="button-large" onclick="location.href='#'">projects</button>
 					</div>
 					<div class="resume-button">
-						<button class= "button-large" onclick="location.href='#'">resume</button>
+						<button class= "button-large" onclick="window.open('pdf/zheng-resume-2020.pdf','_blank')">resume</button>
 					</div>
 				</nav>
 			</div>

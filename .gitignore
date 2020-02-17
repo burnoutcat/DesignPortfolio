@@ -1,4 +1,5 @@
 .DS_Store
 .htaccess
 lib/php/credential.php
-
+pdf/
+img/portfolio
