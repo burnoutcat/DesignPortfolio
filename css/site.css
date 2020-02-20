@@ -14,6 +14,7 @@
 	--text-color-light-8:#dedede;
 	--text-color-light-7:#a9a9a9;
 	--text-color-light-6:#8c8b8b;
+	--text-color-dark-2:#2b2b2b;
 	--text-color-dark-0:#000007;
 }
 
@@ -56,7 +57,7 @@ body{
 h1{
 	font-family: "Heebo" , san-serif;
 	font-size:4em;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color:var(--text-color-light-10);
@@ -104,6 +105,10 @@ b{
 	font-weight: 400;
 	width: fit-content;
 	padding: 0 0.5em 0 0.5em;
+}
+
+.invert{
+	filter: invert(0.8);
 }
 
 
@@ -208,6 +213,31 @@ b{
 .button-large:hover{
 	border:2px solid var(--site-color-light-10);
 	background-color: var(--site-color-light-10);
+}
+
+.link-to-btn{
+	border: 2px solid var(--site-color-light-8);
+    background-color: var(--site-color-light-8);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    transition: 200ms; 
+    outline: none;
+}
+
+.link-to-btn span{
+	font-family: 'lato', sans-serif;
+    margin: 0 0.5em 0 0.5em;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--text-color-dark-2);
+}
+
+.link-to-btn:hover{
+	border: 2px solid var(--site-color-light-10);
+    background-color: var(--site-color-light-10);
+	transition: 200ms; 
 }
 
 /*Side Navigation*/

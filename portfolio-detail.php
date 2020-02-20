@@ -10,6 +10,7 @@ require_once "elements/templates.php";
 	<title>Project | Burnoutcat</title>
 
 	<?php include "elements/header-property.php" ?>
+	<link rel="stylesheet" href="css/portfolio.css">
 	<script src="js/canvas.js"></script>
 	<script src="js/portfolio.js"></script>
 	<script> 

@@ -445,6 +445,10 @@
 	font-weight: 500;
 }
 
+.project-banner-control .links{
+	height: 50%;
+}
+
 .project-banner-control .links img{
 	width: 20px; 
 }
@@ -465,7 +469,7 @@
 	transition: 200ms;
 }
 
-.project-banner-control .links a:first-child{
+.project-banner-control .links a{
 	margin-right: 1.5em;
 }
 
@@ -528,6 +532,7 @@
 
 .description-4 .text{
 	flex-wrap: wrap;
+	height: fit-content; 
 	width: 300px;
 	padding: 1em;
 	background-color: var(--site-color-dark-5);

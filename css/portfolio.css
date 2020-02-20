@@ -1,0 +1,35 @@
+#hue-disco .description-2 .project-image{
+	max-width: 500px;
+}
+
+#hue-disco .description-3 .project-image{
+	max-width: 250px;
+}
+
+#telepaz .description-2 .project-image{
+	max-width: 550px;
+}
+
+#telepaz .description-5{
+	height: 800px;
+}
+
+#gagito-marketplace .description-2 .project-image{
+	max-width: 600px;
+}
+
+#razer-blade-15 .description-2 .project-image{
+	max-width: 650px;
+}
+
+#razer-blade-15 .description-4 .project-image{
+	max-width: 550px;
+}
+
+#razer-blade-15 .description-4{
+	margin-bottom: initial;
+}
+
+#ellsworth-kelly-exhibition .description-2 .project-image,#ellsworth-kelly-exhibition .description-3 .project-image{
+	max-width: 500px;
+}

@@ -94,15 +94,14 @@ return $carry.<<<HTML
 					<h4>Project Type</h4>
 					<p>Personal</p>
 				</div>
-				<div class="links flex-parent align-center">
+				<div class="links flex-parent align-center flex-align-center">
 					<a class="github icon flex-none" href="$item->git"> 
-						<img src="img/github_logo_100.svg" class="media-image" alt="github">
-						<h4>Github</h4>
+						<img src="img/github_logo_100.svg" class="media-image" alt="github" style="width:28px;">
 					</a>
-					<a class="egress icon flex-none" href="$item->link" target="_blank">
-						<img src="img/egress.svg" class="media-image" alt="link to project">
-						<h4>View</h4>
-					</a>									
+					<button class="link-to-btn" onclick="window.open('$item->link')" style="height: 100%;">
+						<span>View Project</span>
+						<img src="img/egress.svg" class="media-image invert" alt="link to project">
+					</button>									
 				</div>
 			</div>
 		</div>
@@ -143,7 +142,7 @@ return $carry.<<<HTML
 			</div>
 		</div>
 
-		<div class="description-4 flex-parent flex-align-center">
+		<div class="description-4 flex-parent">
 			<div class="text flex-none">
 				<div class="title">
 					<h3>$item->title_4</h3>

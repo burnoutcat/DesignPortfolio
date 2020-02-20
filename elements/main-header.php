@@ -17,7 +17,7 @@
 			</ul>
 		</div>
 
-		<a href="index.php" class="navbar-img flex-none">
+		<a href="https://github.com/burnoutcat/DesignPortfolio/" target="_blank" class="navbar-img flex-none">
 			<img src="img/rev-01.png" alt="site-logo">
 		</a>
 
