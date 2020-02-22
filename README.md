@@ -17,7 +17,7 @@ __This website's root is being redirected to /workinprogress as it is constantly
 - [ ] New blog page
 - [ ] List view / grid view on portfolio page
 - [ ] Refine portfolio page
-  - [ ] Improve navagation
+  - [ ] Improve navigation
   - [ ] Improve CSS layout
 - [ ] Add transition animations
 - [ ] Add features to admin page

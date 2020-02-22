@@ -26,7 +26,7 @@ require_once "elements/templates.php";
 	<div class="portfolio-window container flex-parent flex-align-center">
 		<div class="flex-child portfolio-title highlighted">
 			<h1>PORTFOLIO</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur</p>
+			<p>[UPDATING] Some projects that I designed</p>
 		</div>
 		<div class="flex-none portfolio-title-text">
 			<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque</p>
