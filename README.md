@@ -10,19 +10,23 @@ Link to the website: <https://burnoutcat.com/>
 Workinprogress 
 -------------------
 __This website's root is being redirected to /workinprogress as it is constantly updating and improving. Beside adding my projects, I am also working on these features__
-- [ ] Responsive 
 - [ ] Light / dark mode
-- [ ] New index canvas (dots effect?)
+- [ ] New index canvas (dots effect?, Anime.js?)
 - [ ] New photo-wall page (still image projects w/o description)
 - [ ] New blog page
 - [ ] List view / grid view on portfolio page
-- [ ] Refine portfolio page
-  - [ ] Improve navigation
-  - [ ] Improve CSS layout
 - [ ] Add transition animations
 - [ ] Add features to admin page
   - [ ] Edit/add content on index.php
   - [ ] More media type support (pdf, canvas, video)
+
+__recent changes__
+
+- [x] Responsive 
+- [x] Refine portfolio page
+	- [x] Improve navigation
+	- [x] Improve CSS layout
+
   
 __features added__
   
