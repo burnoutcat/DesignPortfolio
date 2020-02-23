@@ -311,12 +311,21 @@ b{
 
 @media(max-width: 600px){
 
+	body{
+		padding-bottom: 30em;
+	}
+
 	.container{
-		width: 90%;
+		width: 85%;
 	}
 
 	h2{
 		line-height: initial;
+	}
+
+	.navbar{
+		height: auto;
+		padding-top: 4em;
 	}
 
 	.navbar-wrapper{
@@ -331,6 +340,34 @@ b{
 	.navbar-wrapper .nav{
 		text-align: center;
 		display: none;
+	}
+
+	.navbar .mobile-nav{
+		margin-top: 4em;
+		padding: 5em 0 5em 0;
+		width: 95%;
+		border-radius: 10px;
+		display: block;
+		background-color: var(--site-color-dark-2);
+	}
+
+	.navbar .mobile-nav nav{
+		display: flex;
+	}
+
+	.navbar .mobile-nav span {
+		background-color: transparent;
+		font-weight: 300;
+	}
+
+	.navbar .mobile-nav nav > a {
+		flex: 1 1 auto;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.navbar .mobile-nav nav > a:not(:last-child){
+		border-right: solid 1px var(--text-color-light-8);
 	}
 
 
@@ -374,6 +411,55 @@ b{
 
 	.side-nav{
 		display: none;
+	}
+
+	.portfolio .header-container{
+		max-width: unset;
+	}
+
+	.link-to-btn{
+		height: 100%;
+		padding:0 4em;
+	}
+
+	.link-to-btn span{
+		display: none;
+	}
+
+	.portfolio.navbar{
+		position: absolute;
+		width: 90%;
+		right: 50%;
+		transform: translate(50%,0);
+	}
+
+	.portfolio.navbar .nav{
+		font-size: 2em;
+	}
+
+	.footer-window{
+		padding-bottom: 3em;
+		flex-direction: column;
+	}
+
+	.social-media-icons img{
+		height: 70px;
+	}
+
+	.social-media-icons{
+		text-align: left;
+		width: 100%;
+		margin-top: 4em;
+	}
+
+	.social-media-icons a:first-child{
+		margin-right: 10em;
+	}
+
+	.footer-text p{
+		font-size: 1.5em;
+		width: unset;
+		opacity: 0.6;
 	}
 
 }

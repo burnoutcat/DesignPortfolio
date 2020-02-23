@@ -597,6 +597,7 @@
 
 	.index-window{
 		display: block;
+		margin-top: 8em;
 	}
 
 	.index-title{
@@ -632,6 +633,10 @@
 		display: none;
 	}
 
+	.feature-project-window{
+		grid-gap: 3%;
+	}
+
 	.feature-window .feature-title{
 		text-align: right;
 		padding-top: 0;
@@ -644,7 +649,7 @@
 
 	.all-project-button .nav{
 		font-size: 3em;
-		margin-top: 0.5em;
+		margin-top: 3em;
 	}
 
 	.index-about-window{
@@ -658,6 +663,7 @@
 
 	.index-about{
 		order: 1;
+		margin-bottom: 3em;
 	}
 
 	.index-about-text{
@@ -692,7 +698,7 @@
 	}
 
 	.portfolio-window{
-		margin-top: unset;
+		margin-top: 10em;
 		display: block;
 		text-align: left;
 	}
@@ -702,13 +708,13 @@
 	}
 
 	.portfolio-title p{
-		font-size: 0.9em;
+		font-size: 1.5em;
 	}
 
 	.portfolio-title-text{
 		width: unset;
 		text-align: left;
-		font-size: 1.6em;
+		font-size: 2.5em;
 		margin-top: 2em;
 	}
 
@@ -726,7 +732,7 @@
 	.portfolio-item .text-wrapper .title{
 		margin-bottom: unset;
 		flex-direction: column;
-		font-size: 2em;
+		font-size: 2.4em;
 	}
 
 	.portfolio-item .text-wrapper .description{
@@ -740,6 +746,212 @@
 	.portfolio-item .links a{
 		width: 40px; 
 	}
+
+	.skillset-window{
+		margin-top: 7em;
+		margin-bottom: 10em;
+		display: block;
+	}
+
+	.skillset-title{
+		font-size: 1.5em;
+	}
+
+	.skillset-detail{
+		font-size: 1.5em;
+	}
+
+	.skill-tabs{
+		margin-bottom: 1em;
+		width: unset;
+		font-size: 1.3em; 
+	}
+
+	.skill-tabs nav{
+		display: flex;
+		width: 100%;
+		overflow: auto;
+	}
+
+	.skill-tabs .tab:first-child{
+		margin-left: 0;
+	}
+
+	.skill-tabs-window{
+		flex-direction: column;
+	}
+
+	.skill-tabs .tab{
+		margin: 2em;
+		font-size: 1.3em;
+		width: fit-content;
+		margin-right: 2em;
+		white-space: nowrap;
+	}
+
+	.skill-tabs .tab h3{
+		width: unset;
+	}
+
+	.content-detail{
+		margin: 0 0 8em; 
+	}
+
+	.content-detail p{
+		font-size: 2.5em;
+	}
+
+	.content-tags{
+		margin: 5em 0 8em 0;
+		max-width: unset;
+	}
+
+	.content-tags .tag{
+		font-size: 2em;
+	}
+
+	.project-list .project-thumbnail{
+		width:400px;
+		max-width: unset;
+	}
+
+	.project-banner-control{
+		font-size: 2em;
+	}
+
+	.project-banner-window{
+		position: unset;
+		transform: unset;
+		height: unset;
+		height: fit-content;
+		padding-bottom: 10em;
+	}
+
+	.project-banner-textwrapper{
+		font-size: 2em;
+		padding-top: 7em;
+	}
+
+	.project-banner-title h4{
+		margin-top: 0.5em;
+	}
+
+	.project-banner-title h1{
+		font-size: 3em;
+		line-height: 1em;
+	}
+
+	.project-banner-tag{
+		width: unset;
+	}
+
+	.project-banner-control{
+		position: unset;
+		width: unset;
+		height: unset;
+		width: 95%;
+		margin: -1em auto;
+		height: 150px;
+		right: unset;
+		top: unset;
+	}
+
+	.project-banner-detail{
+		width: unset;
+	}
+
+	.portfolio-content .main-description{
+		padding-top: unset;
+		margin-top: 10em;
+	}
+
+	.portfolio-content .main-description h3{
+		font-size: 2.5em;
+	}
+
+	.description-2{
+		flex-direction: column;
+	}
+
+	.description-3,.description-4,.description-5,.description-6{
+		margin-top: 20em;
+	}
+
+	.description-2 .project-image,.description-3 .project-image,.description-6 .project-image{
+		max-width: unset;
+	}
+
+	.description-2 .text,.description-6 .text{
+		margin-right: unset;
+	}
+
+	.description-2 .text, .description-3 .text,.description-4 .text,.description-5 .text,.description-6 .text{
+		font-size: 2em;
+		margin-bottom: 3em;
+	}
+
+	.description-2 .text p,.description-3 .text p,.description-5 .text p,.description-6 .text p{
+		line-height: unset;
+	}
+
+	.description-2 .project-image{
+
+	}
+
+	.description-3{
+		flex-direction: column;
+	}
+
+	.description-3 .text{
+		margin-left: unset;
+	}
+
+	.description-3 .project-image{
+		order: 2
+	}
+
+	.description-4{
+		flex-direction: column;
+	}
+
+	.description-4 .project-image img{
+		max-width: unset;
+	}
+
+	.description-4 .text{
+		width: unset;
+		margin-right: unset;
+	}
+
+	.description-4 .text p{
+		line-height: unset;
+	}
+
+
+	.description-5 .text{
+		text-align: left;
+	}
+
+	.description-5 .project-image{
+		width: 100%;
+/*		width: 285vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -150vw;
+		margin-right: -150vw;*/
+	}
+
+
+	.description-6{
+		flex-direction: column;
+	}
+
+
+	.description-6 .project-image{
+		
+	}
+
 
 
 }

@@ -21,6 +21,15 @@
 			<img src="img/rev-01.png" alt="site-logo">
 		</a>
 
-
 	</div>
+
+	<div class="mobile-nav nav container" style="display: none;">
+		<nav>
+			<a href="skillset.php"><span>SKILLSET</span></a>
+			<a href="portfolio.php"><span>PORTFOLIO</span></a>
+			<a href="pdf/zheng-resume-2020.pdf"><span>RESUME</span></a>
+		<!-- 	<li><a class="light-dark-toggle" href="#"><span>Light mode ?</span></a></li> -->
+		</nav>
+	</div>
+
 </header>

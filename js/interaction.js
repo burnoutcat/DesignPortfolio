@@ -2,6 +2,7 @@ $(document).ready(function(){
 	deselectItem();
 	tabSelect();
 	iconSelect();
+	mobileDropDown();
 })
 
 deselectItem = () =>{
@@ -32,6 +33,12 @@ iconSelect = (e) =>{
 		} else{
 			$(this).addClass("active").siblings().removeClass("active");
 		}
+	})
+}
+
+mobileDropDown = (e) =>{
+	$("#nav-menu").on("click",function(e){
+		$(".mobile-nav").slideToggle(200);
 	})
 }
 

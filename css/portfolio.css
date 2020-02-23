@@ -33,3 +33,42 @@
 #ellsworth-kelly-exhibition .description-2 .project-image,#ellsworth-kelly-exhibition .description-3 .project-image{
 	max-width: 500px;
 }
+
+
+@media(max-width: 600px){
+	#hue-disco .description-2 .project-image{
+		max-width: unset;
+	}
+
+	#hue-disco .description-3 .project-image{
+		max-width: unset;
+	}
+
+	#telepaz .description-2 .project-image{
+		max-width: unset;
+		display: block;
+		width: 100%;
+	}
+
+	#telepaz .description-5{
+		height: unset;
+		margin-bottom: -30em;
+	}
+
+	#gagito-marketplace .description-2 .project-image{
+		max-width: unset;
+	}
+
+	#razer-blade-15 .description-2 .project-image{
+		max-width: unset;
+	}
+
+	#razer-blade-15 .description-4 .project-image{
+		max-width: unset;
+	}
+
+	#ellsworth-kelly-exhibition .description-2 .project-image,#ellsworth-kelly-exhibition .description-3 .project-image{
+		max-width: unset;
+	}
+
+}

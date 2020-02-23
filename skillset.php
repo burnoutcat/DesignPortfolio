@@ -59,7 +59,7 @@ require_once "elements/templates.php";
 					<div class="tag">PHP</div>
 					<div class="tag">MySQL</div>
 				</div>
-				<div class="project-list row gap xs-small">
+				<div class="project-list row gap xs-large">
 					<?php 
 
 					$result = makeQuery(
@@ -92,7 +92,7 @@ require_once "elements/templates.php";
 					<div class="tag">InVision</div>
 					<div class="tag">Figma</div>
 				</div>
-				<div class="project-list row gap xs-small">
+				<div class="project-list row gap xs-large">
 					<?php 
 
 					$result = makeQuery(
@@ -125,7 +125,7 @@ require_once "elements/templates.php";
 					<div class="tag">Keynote</div>
 					<div class="tag"> Procreate</div>
 				</div>
-				<div class="project-list row gap xs-small">
+				<div class="project-list row gap xs-large">
 					<?php 
 
 					$result = makeQuery(
@@ -155,7 +155,7 @@ require_once "elements/templates.php";
 					<div class="tag">Premiere</div>
 					<div class="tag">Final Cut Pro</div>
 				</div>
-				<div class="project-list row gap xs-small">
+				<div class="project-list row gap xs-large">
 					<?php 
 
 					$result = makeQuery(
