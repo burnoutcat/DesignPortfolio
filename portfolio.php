@@ -23,17 +23,18 @@ require_once "elements/templates.php";
 
 	<canvas id="index-canvas" class="fixed"></canvas>
 
-	<div class="portfolio-window container flex-parent flex-align-center">
+	<div class="portfolio-window container flex-parent flex-align-center animated fadeInUp">
 		<div class="flex-child portfolio-title highlighted">
 			<h1>PORTFOLIO</h1>
 			<p>[UPDATING] Some projects that I designed</p>
 		</div>
 		<div class="flex-none portfolio-title-text">
-			<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque, ipsa, sint dolores minima tempore, doloribus suscipit <b>officia </b>et magni maxime nulla at! Veniam amet iusto hic voluptatibus mollitia id perspiciatis quam deserunt tempore, impedit fugit dicta similique inventore et.Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit. A itaque</p>
+			<p>Welcome to my design portfolio. Here are some projects that I worked or working on while pursuing my master’s degree in <b>Web Design & New Media</b>. I am a fast learner and also super addicted to product design. So, this is also a <b>super-active-constantly-updating</b> portfolio that I have been adding content every day.</p>
+			<p>Btw,  <b>this website is completely designed and built from scratch</b>. My portfolio website is currently on revision 1. Go check out the <a href="https://github.com/burnoutcat/DesignPortfolio/" target="_blank">REV01</a> link on the top to view what feature has been done and what features are coming up.  </p>
 		</div>
 	</div>
 
-	<div class="portfolio-list-window container">
+	<div class="portfolio-list-window container animated fadeIn">
 		<!-- <div class="portfolio-sort-window flex-parent">
 			<div class="flex-child" style="content: '';"></div>
 			<div class="flex-none sort-icons flex-parent">

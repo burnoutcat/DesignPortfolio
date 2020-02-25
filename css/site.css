@@ -51,7 +51,7 @@ body{
 	font-family: inherit;
 	position: relative;
 	min-height: 100%;
-	padding-bottom: 15em;
+	padding-bottom: 20em;
 }
 
 h1{
@@ -300,10 +300,10 @@ b{
 
 .footer-text p{
 	font-size: 0.7em;
-	width: 400px;
+	margin-bottom: 0.5em;
+	width: 600px;
 	font-weight: 300;
-	color: var(--text-color-light-8);
-
+	color: var(--text-color-light-7);
 }
 
 
@@ -312,7 +312,7 @@ b{
 @media(max-width: 600px){
 
 	body{
-		padding-bottom: 30em;
+		padding-bottom: 40em;
 	}
 
 	.container{

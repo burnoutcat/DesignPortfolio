@@ -1,6 +1,7 @@
 <footer class="footer-window flex-parent container flex-align-center">
 	<div class="footer-text flex-child">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sequi distinctio dignissimos ex consectetur suscipit officia quasi cupiditate voluptatibus praesentium vel accusantium maiores.</p>
+		<p>This is a portfolio website for designer Jian (Jacky) Zheng. All projects (unless stated otherwise) shown on this website are for educational and personal use only and do not be used commercially. Please contact me if you have any questions or concerns. </p>
+		<p>Copyright &copy 2020 Jian Zheng</p>
 	</div>
 	<div class="social-media-icons flex-parent align-right flex-none">
 		<a href="https://linkedin.com/in/jackyzhengdesign" target="_blank"> 

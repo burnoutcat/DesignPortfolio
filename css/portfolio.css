@@ -34,6 +34,14 @@
 	max-width: 500px;
 }
 
+#visual-design-portfolio-2018 #canvas-6{
+	display: none;
+}
+
+#visual-design-portfolio-2018.portfolio-content .main-description{
+	width: 1000px;
+}
+
 
 @media(max-width: 600px){
 	#hue-disco .description-2 .project-image{
@@ -69,6 +77,10 @@
 
 	#ellsworth-kelly-exhibition .description-2 .project-image,#ellsworth-kelly-exhibition .description-3 .project-image{
 		max-width: unset;
+	}
+
+	#visual-design-portfolio-2018.portfolio-content .main-description{
+	width: unset;
 	}
 
 }

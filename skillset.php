@@ -20,7 +20,7 @@ require_once "elements/templates.php";
 
 	<canvas id="index-canvas" class="fixed"></canvas>
 
-	<div class="skillset-window container flex-parent">
+	<div class="skillset-window container flex-parent animated fadeInUp">
 		<div class="flex-none" style="content: ''; width: 100px;"></div>
 		<div class="skillset-title">
 			<h1>Skillset</h1>
@@ -28,15 +28,15 @@ require_once "elements/templates.php";
 		<div class="flex-child">
 			<canvas id="canvas-5"></canvas>
 			<div class="highlighted skillset-detail">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, reprehenderit.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+				<p>T or F -> All design and no play makes Jack a dull boy? </p>
+				<p>Nah, I guess I just simply enjoy designing.....</p>
+				<p>Take a look at what I am good at</p>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="flex-parent container skill-tabs-window">
+	<div class="flex-parent container skill-tabs-window animated fadeIn delay-1s">
 		<div class="flex-none skill-tabs">
 			<nav>
 				<div class="tab active"><h3>Websites</h3></div>
@@ -48,8 +48,8 @@ require_once "elements/templates.php";
 		<div class="flex-child skill-tabs-content">
 			<div class="content active"> <!-- Websites -->
 				<div class="content-detail">
-					<p>It was really hard for me to describe how much I am enjoying design, especially for web design. I love design projects that are   pixel-perfected across all screen sizes, and finetune CSS for maximum responsiveness. I’d like to prioritize usability and accessibility over visual presentation because I want my design to be understood by mass audiences. 
-					</p>
+					<p>Proficient with web building (HTML, CSS, JavaScript). Especially creating responsive prototype websites, able to write an entire prototype project (from Sketch, XD, etc.) for a responsive website that can be accessed by multiple devices.</p>
+					<p>I love design projects that are pixel-perfected across all screen sizes, and finetune CSS for maximum responsiveness. I want to prioritize usability and accessibility over visual presentation because I want my design to be understood by mass audiences.</p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">HTML</div>
@@ -59,7 +59,7 @@ require_once "elements/templates.php";
 					<div class="tag">PHP</div>
 					<div class="tag">MySQL</div>
 				</div>
-				<div class="project-list row gap xs-large">
+				<div class="project-list row gap xs-medium">
 					<?php 
 
 					$result = makeQuery(
@@ -82,8 +82,8 @@ require_once "elements/templates.php";
 			</div>
 			<div class="content"> <!-- UI -->
 				<div class="content-detail">
-					<p>I am a huge tech savvy guy and I have used an extremely wide range of devices, from smart toothbrush to varies automobile UI. Some of these UIs are visually fancy and packed with features in single page, and complex and hard to navigate. In my process of designing user interfaces, I always consider hierarchy, and to build products that are intuitive. 
-					</p>
+					<p>Capable of designing a user interface that is both understands customer needs and adapts to design trends and brainstorming enhancements to a product and creating high usability and accessibility designs that are friendly to developers.</p>
+					<p>I am a huge tech-savvy guy, and I have used an extensive range of devices, from smart toothbrushes to varies automobile UI. Some of these UIs are visually fancy and packed with features in a single page, and complex and hard to navigate. In my process of designing user interfaces, I always consider hierarchy, and to build intuitive products.</p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">Sketch</div>
@@ -92,7 +92,7 @@ require_once "elements/templates.php";
 					<div class="tag">InVision</div>
 					<div class="tag">Figma</div>
 				</div>
-				<div class="project-list row gap xs-large">
+				<div class="project-list row gap xs-medium">
 					<?php 
 
 					$result = makeQuery(
@@ -115,8 +115,8 @@ require_once "elements/templates.php";
 			</div>
 			<div class="content"> <!-- Graphic Design -->
 				<div class="content-detail">
-					<p> I do graphic design (logo, packaging, branding, web banner) and digital illustration primary based on emphasis and balance. I love working with typographic and color as they are strong tools for appealing designs.
-					</p>
+					<p> Proficient with design software such as Adobe Illustrator, Sketch, Photoshop, Procreate, etc. Design logos, product packings, brandings, web banners, and digital illustrations or instruction.</p>
+					<p>I love working with typographic and color as they are strong tools for creating designs that are standing out. My favorite font is Helvetica Neue, a san-serif font with a wide range of variations.</p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">Photoshop</div>
@@ -125,7 +125,7 @@ require_once "elements/templates.php";
 					<div class="tag">Keynote</div>
 					<div class="tag"> Procreate</div>
 				</div>
-				<div class="project-list row gap xs-large">
+				<div class="project-list row gap xs-medium">
 					<?php 
 
 					$result = makeQuery(
@@ -148,14 +148,14 @@ require_once "elements/templates.php";
 			</div>
 			<div class="content"> <!-- Motion Graphic -->
 				<div class="content-detail">
-					<p>Proficient with After Effects to create 2D/3D animations for prototypes, AR demo, special effects. Two years of industry experience in graphic design, photography (product, portrait), and video production (film, advertisement). </p>
+					<p>Proficient with After Effects to create 2D/3D animations for prototypes, logo animations, AR demos, special effects. Years of experience using video editing software such as Premiere Pro and Final Cut Pro. Capable of creating prototype demonstration that isn’t provided by current prototyping software (image recognition, photo filter, etc.) </p>
 				</div>
 				<div class="content-tags">
 					<div class="tag">After Effect</div>
 					<div class="tag">Premiere</div>
 					<div class="tag">Final Cut Pro</div>
 				</div>
-				<div class="project-list row gap xs-large">
+				<div class="project-list row gap xs-medium">
 					<?php 
 
 					$result = makeQuery(
