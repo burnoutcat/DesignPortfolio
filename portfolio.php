@@ -47,6 +47,9 @@ require_once "elements/templates.php";
 			</div>
 		</div> -->
 		<div class="portfolio-list-detail listview">
+			<div class="portfolio-label">
+				<h2>Work In Progress</h2>
+			</div>
 			<?php 
 
 				$result = makeQuery(
@@ -54,6 +57,28 @@ require_once "elements/templates.php";
 					"
 					SELECT * 
 					FROM `project`
+					WHERE category = 'Work In Progress'
+					ORDER BY date_create DESC
+					"
+				);
+
+					echo array_reduce($result,
+					'projectList');
+
+	
+			 ?>	
+
+			<div class="portfolio-label">
+				<h2>All Projects</h2>
+			</div>
+			<?php 
+
+				$result = makeQuery(
+					makeConn(),
+					"
+					SELECT * 
+					FROM `project`
+					WHERE category <> 'Work In Progress'
 					ORDER BY date_create DESC
 					"
 				);

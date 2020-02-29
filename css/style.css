@@ -289,6 +289,20 @@
     background-color: var(--text-color-dark-2);
 }
 
+.portfolio-label h2{
+    background-color: var(--text-color-dark-2);
+    color: var(--text-color-light-10);
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0 1em 0 1em;
+    width: 200px;
+    text-align: center;
+}
+
+.portfolio-label:not(:first-child){
+	margin-top: 3em;
+}
+
 .sort-icons img{
 	width: 20px;
 	margin-left: 0.9em;
@@ -532,6 +546,13 @@
 	font-weight: 700;
 }
 
+.portfolio-content-detail ul{
+    font-size: 1.2em;
+    line-height: 25px;
+    color: var(--text-color-light-7);
+	list-style-type: circle;
+}
+
 #canvas06{
 	height: 400px;
 	width: 100%;
@@ -770,6 +791,13 @@
 		width: 40px; 
 	}
 
+	.portfolio-label h2{
+		width: 100%;
+	    font-size: 2em;
+	    margin-left: unset;
+	    padding: 0.5em 0;
+	}
+
 	.skillset-window{
 		margin-top: 7em;
 		margin-bottom: 10em;
@@ -862,6 +890,10 @@
 	.project-banner-title h1{
 		font-size: 3em;
 		line-height: 1em;
+	}
+
+	.portfolio-content-detail ul{
+		line-height: unset;
 	}
 
 	.project-banner-tag{

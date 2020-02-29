@@ -3,7 +3,8 @@
 require_once "lib/php/helper.php";
 require_once "elements/templates.php";
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,12 +28,22 @@ require_once "elements/templates.php";
 	
 <?php
 
+// Check if an id isset, if not redirect to portfolio page
+
+if(isset($_GET['id'])){
+	$my_id = $_GET['id'];
+} else {
+	header("Location:portfolio.php");
+}
+
+
+
 $result = makeQuery(
 	makeConn(),
 	"
 	SELECT *
 	FROM `project`
-	WHERE id = {$_GET['id']}
+	WHERE id = {$my_id}
 	"
 );
 

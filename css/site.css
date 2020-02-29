@@ -98,6 +98,13 @@ b{
 	font-weight: 400;
 }
 
+ul{
+	font-family: "Lato", san-serif;
+	font-size: 1em;
+	color:var(--text-color-light-8);
+	font-weight: 300;
+}
+
 
 
 .highlighted p{
