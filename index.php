@@ -17,17 +17,29 @@ require_once "elements/templates.php";
 <body onload="indexLoaded()"> <!-- Load Canvas -->
 	<section id="action"> <!-- Canvas Animation Listener -->
 
-		<?php include "elements/main-header.php" ?>
+		<div class="animated fadeIn delay-1s">
+			<?php include "elements/main-header.php" ?>
+		</div>
 
 		<canvas id="index-canvas" class="animated fadeIn delay-1s"></canvas>
 
-		<div class="index-window container flex-parent animated fadeInUp">
+		<div class="index-window container">
 			<div class="index-title flex-child">
-				<h4>Designed by</h4>
-				<h1>burnoutcat</h1>
+				<div class="pt1">
+					<h4>My name is</h4>
+					<div class="pt2">
+						<h1>Jacky Zheng</h1>
+					</div>
+				</div>
+				<div class="pt3-wrapper">
+					<div class="pt3">
+						<h4>I'm a</h4>
+						<h1>PRODUCT DESIGNER</h1>
+					</div>
+				</div>
 			</div>
-			<div class="index-detail">
-				<p>I’m <b>Jacky Zheng</b>, a tech enthusiast who enjoys exploring new technologies and trends. I design <b>user interfaces</b>, <b>digital graphics</b>, and <b>websites</b> that understand user needs. I have been well known as a great <b>team-player</b> and well-adapted to the rapidly growing industry. </p>
+			<div class="index-detail animated fadeIn delay-1s">
+				<p>I design <b>user interfaces</b>, <b>digital graphics</b>, and <b>websites</b> that understand user needs. I have been well known as a great <b>team-player</b> and well-adapted to the rapidly growing industry. </p>
 			</div>
 		</div>
 
@@ -78,7 +90,7 @@ require_once "elements/templates.php";
 
 	<div class="flex-parent index-about-window container">
 		<div class="flex-none index-about-text">
-			<h2>Think about my design process. I love to research <span>design trends</span> and <span>user behaviors</span>, and quickly design prototypes that are <span>intuitive</span> and <span>scalable</span>.  I am more than happy to demonstrate my ideas via low or high-fidelity prototype using Sketch, Adobe XD, and Figma. I love to build websites and interactive prototypes using HTML5/CSS3 and JavaScript/jQuery. Also, I am a super talkative person, and love to share my ideas and passionate about design. </h2>
+			<h2>Think about my design process. I love to research <span>design trends</span> and <span>user behaviors</span>, and quickly design prototypes that are <span>intuitive</span> and <span>scalable</span>.  I am more than happy to demonstrate my ideas via low or high-fidelity prototype using Sketch, Adobe XD, and Figma. I love to build websites and interactive prototypes using HTML5/CSS3 and JavaScript/jQuery. Also, I am a super talkative person, and love to share my ideas and passions about design. </h2>
 
 			<h2>While I am not designing, I’d like to go out doing videography and photography. <br>
 			<span>Feel free to shoot me a message or even grab a coffee with me.</span> </h2>
@@ -101,7 +113,7 @@ require_once "elements/templates.php";
 				<canvas id="canvas-2"></canvas>
 				<nav class="index-nav-list">
 					<div class="project-button">
-						<button class="button-large" onclick="location.href='#'">projects</button>
+						<button class="button-large" onclick="location.href='portfolio.php'">projects</button>
 					</div>
 					<div class="resume-button">
 						<button class= "button-large" onclick="window.open('pdf/zheng-resume-2020.pdf','_blank')">resume</button>

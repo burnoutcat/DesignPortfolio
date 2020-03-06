@@ -1,18 +1,19 @@
 /*Index.php*/
 
 .index-window{
-	margin-top: 2em;
+	height: 70vh;
 	margin-bottom: 8em;
-	align-items: center;
+	text-align: center;
 }
 
 .index-detail{
-	flex: 0 420px;
-	text-align: right;
+	margin-top: 10em;
 }
 
 .index-detail p{
     font-size: 1.5em;
+    max-width: 1000px;
+    magin:0 auto;
     color: var(--text-color-light-7);
     line-height: 1.5em;
     font-weight: 300;
@@ -21,8 +22,73 @@
 
 .index-title h4{
 	position: relative;
-	top:25px;
+	top:7px;
 }
+
+/*Index Text Animation*/
+
+.index-title .pt1{
+	animation-name: textAppearUp;
+	animation-duration: 2s;
+}
+
+.index-title .pt2{
+	font-size: 1em;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-name: textAppear;
+	animation-duration: 1s;
+	animation-delay: 100ms;
+}
+
+.index-title .pt3-wrapper{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.index-title .pt3{
+	opacity: 0;
+	width: fit-content;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	animation-fill-mode: forwards;
+	animation-name: textAppearDown;
+	animation-duration: 1.2s;
+	animation-delay: 1000ms;
+}
+
+.index-title .pt3 h1{
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 20px;
+	max-width: 700px;
+	font-weight: 600;
+	color: var(--text-color-light-8);
+	background-color: #151515;
+}
+
+
+@keyframes textAppearUp{
+	0% {opacity: 0;padding-top: 100px;}
+	50% {opacity: 1;padding-top: 100px;}
+	100% {opacity: 1;padding-top: 0;}	
+}
+
+@keyframes textAppear{
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 1;}	
+}
+
+@keyframes textAppearDown{
+	0% {opacity: 0;top: -100%;}
+	50% {opacity: 1;top: : -75%;}
+	100% {opacity: 1;top: 0;}
+}
+
 
 .feature-window{
 	position: relative;
@@ -402,6 +468,49 @@
 	transition: 200ms;
 }
 
+/*Portfolio Grid View*/
+
+.portfolio-list-detail.gridview .portfolio-item{
+	display: block;
+	text-align: center;
+}
+
+.portfolio-list-detail.gridview .portfolio-label{
+	display: none;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .image{
+	width: unset;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .text-wrapper{
+	width: unset;
+	padding: unset;
+	display: block;
+	margin-top: 0.5em;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .text-wrapper .title{
+	margin-bottom: unset;
+	display: block;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .text-wrapper .name{
+	margin-right: unset;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .text-wrapper .description{
+	display: none;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .text-wrapper .tag{
+	display: none;
+}
+
+.portfolio-list-detail.gridview .portfolio-item .links a{
+	display: none;
+}
+
 /*Portfolio Detail Page*/
 
 .project-banner-window{
@@ -639,14 +748,21 @@
 
 @media(max-width: 600px){
 
+	.index-title .pt3-wrapper{
+		height: 160px;
+	}
+
+	.index-title .pt3 h1{
+		font-size: 5em;
+		max-width: unset;
+	}
+
 	.index-window{
 		display: block;
 		margin-top: 8em;
+		margin-bottom: 20em;
 	}
 
-	.index-title{
-		text-align: left;
-	}
 
 	.index-title h4{
 		font-size: 3em;
@@ -661,7 +777,7 @@
 		line-height: 1em;
 		flex: 0 350px;
 		text-align: left;
-		margin-top: 2em;
+		margin-top: 4em;
 	}
 
 	.index-detail p{

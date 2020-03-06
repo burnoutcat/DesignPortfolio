@@ -30,12 +30,12 @@ require_once "elements/templates.php";
 		</div>
 		<div class="flex-none portfolio-title-text">
 			<p>Welcome to my design portfolio. Here are some projects that I worked or working on while pursuing my master’s degree in <b>Web Design & New Media</b>. I am a fast learner and also super addicted to product design. So, this is also a <b>super-active-constantly-updating</b> portfolio that I have been adding content every day.</p>
-			<p>Btw,  <b>this website is completely designed and built from scratch</b>. My portfolio website is currently on revision 1. Go check out the <a href="https://github.com/burnoutcat/DesignPortfolio/" target="_blank">REV01</a> link on the top to view what feature has been done and what features are coming up.  </p>
+			<p>By the way,  <b>this website is completely designed and built from scratch</b>. My portfolio website is currently on revision 1. Go check out the <a href="https://github.com/burnoutcat/DesignPortfolio/" target="_blank">REV01</a> link on the top to view what feature has been done and what features are coming up.  </p>
 		</div>
 	</div>
 
 	<div class="portfolio-list-window container animated fadeIn">
-		<!-- <div class="portfolio-sort-window flex-parent">
+		<div class="portfolio-sort-window flex-parent">
 			<div class="flex-child" style="content: '';"></div>
 			<div class="flex-none sort-icons flex-parent">
 				<div class="icon active" id="listview">
@@ -45,7 +45,7 @@ require_once "elements/templates.php";
 					<img src="img/gridview.svg" alt="gridview">
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<div class="portfolio-list-detail listview">
 			<div class="portfolio-label">
 				<h2>Work In Progress</h2>

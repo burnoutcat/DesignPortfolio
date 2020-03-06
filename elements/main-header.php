@@ -4,9 +4,11 @@
 		<input type="checkbox" id="nav-menu" class="hidden">
 		<label for="nav-menu">&veebar;</label>
 
-		<a href="index.php" class="site-logo flex-child">
-			<img src="img/site-icon.svg" alt="site-logo">
-		</a>
+		<div class="site-logo flex-child">
+			<a href="index.php">
+				<img src="img/site-icon.svg" alt="site-logo">
+			</a>
+		</div>
 
 		<div class="nav flex-none">
 			<ul>

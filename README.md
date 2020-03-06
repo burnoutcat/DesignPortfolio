@@ -14,7 +14,6 @@ __This website's root is being redirected to /workinprogress as it is constantly
 - [ ] New index canvas (dots effect?, Anime.js?)
 - [ ] New photo-wall page (still image projects w/o description)
 - [ ] New blog page
-- [ ] List view / grid view on portfolio page
 - [ ] Add transition animations
 - [ ] Add features to admin page
   - [ ] Edit/add content on index.php
@@ -23,6 +22,7 @@ __This website's root is being redirected to /workinprogress as it is constantly
 __recent changes__
 
 - [x] Responsive 
+- [x] List view / grid view on portfolio page
 - [x] Refine portfolio page
 	- [x] Improve navigation
 	- [x] Improve CSS layout
